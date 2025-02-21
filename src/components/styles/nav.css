@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Inter;
+  src: url(/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+.navbar {
+  padding: 30px 0px !important;
+}
+.navbar .navbar-nav {
+  gap: 20px;
+  align-items: center;
+}
+.navbar a.nav-link {
+  color: white;
+}
+.navbar button {
+  background-color: #c21e05 !important;
+  padding: 15px 25px;
+  transition: 0.3s ease-out;
+}
+.navbar button:hover {
+  filter: brightness(0.9);
+}/*# sourceMappingURL=nav.css.map */
