@@ -1,7 +1,11 @@
+import Contest from "../components/Contest";
+import HeroSection from "../components/HeroSection";
+
 function HomePage() {
 	return (
 		<>
-			<p>Homepage</p>
+			<HeroSection />
+            <Contest />
 		</>
 	);
 }

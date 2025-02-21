@@ -1,0 +1,34 @@
+.hero-section {
+    .row {
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .col {
+        padding: 0;
+        position: relative;
+        border-radius: 5px;
+
+        .text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+            display: flex;
+            align-items: end;
+            padding: 20px;
+
+            h2 {
+                overflow: hidden;
+                font-weight: 600;
+                font-size: 1.5em;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

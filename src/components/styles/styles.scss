@@ -1,0 +1,69 @@
+@import '../../Styles/vars';
+
+.contest {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .row {
+        justify-content: space-between;
+    }
+
+    .more {
+        text-align: center;
+        color: $red;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .contestItem {
+        border: 2px solid #2c2c2c;
+        border-radius: 20px;
+        padding: 0;
+
+        img {
+            width: 100%;
+        }
+
+        .text {
+            padding: 20px;
+        }
+
+        .name {
+            margin-top: 20px;
+        }
+
+        .col {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .head {
+            margin-bottom: 3px;
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+
+        .tags {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            .tag {
+                padding: 10px 30px;
+                border-radius: 10px;
+            }
+
+            .tag-green {
+                border: 2px solid #02FF02;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Inter;
+  src: url(/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+.contest {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contest h1 {
+  margin-bottom: 30px;
+}
+.contest .row {
+  justify-content: space-between;
+}
+.contest .more {
+  text-align: center;
+  color: #c21e05;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.contest .contestItem {
+  border: 2px solid #2c2c2c;
+  border-radius: 20px;
+  padding: 0;
+}
+.contest .contestItem img {
+  width: 100%;
+}
+.contest .contestItem .text {
+  padding: 20px;
+}
+.contest .contestItem .name {
+  margin-top: 20px;
+}
+.contest .contestItem .col {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.contest .contestItem .head {
+  margin-bottom: 3px;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+.contest .contestItem .tags {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.contest .contestItem .tags .tag {
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+.contest .contestItem .tags .tag-green {
+  border: 2px solid #02FF02;
+}/*# sourceMappingURL=styles.css.map */
