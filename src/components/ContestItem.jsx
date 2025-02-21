@@ -1,25 +1,35 @@
-
-
-function ContestItem() {
+function ContestItem({ name, image, sub_Date, prize, tags }) {
 	return (
 		<div className="contestItem col-3">
-			<img
-				src="/public/Images/contest1.png"
-				alt="Days between us Contest"
-			/>
+			<img src={image} alt={name} />
 			<div className="text">
 				<div className="tags">
-					<div className="tag tag-green">Original</div>
+					{tags.map((tag, index) => {
+						return (
+							<div
+								className={
+									tag === "Original"
+										? "tag tag-green"
+										: tag === "Remix"
+										? "tag tag-yellow"
+										: "tag tag-red"
+								}
+								key={index}
+							>
+								{tag}
+							</div>
+						);
+					})}
 				</div>
-				<h3 className="name">Days between us</h3>
+				<h3 className="name">{name}</h3>
 				<div className="col">
 					<div className="sub">
 						<p className="head">Submission Due:</p>
-						<p>February 16, 2025</p>
+						<p>{sub_Date}</p>
 					</div>
 					<div className="price">
 						<p className="head">PRIZE POOL:</p>
-						<p>800,000BRD</p>
+						<p>{prize}</p>
 					</div>
 				</div>
 			</div>

@@ -44,12 +44,6 @@
             margin-top: 20px;
         }
 
-        .head {
-            margin-bottom: 3px;
-            opacity: 0.8;
-            font-size: 0.9em;
-        }
-
         .tags {
             display: flex;
             gap: 15px;
@@ -63,6 +57,87 @@
 
             .tag-green {
                 border: 2px solid #02FF02;
+            }
+
+            .tag-yellow {
+                border: 2px solid #959A11;
+            }
+
+            .tag-red {
+                border: 2px solid #C20505;
+            }
+        }
+    }
+}
+
+.head {
+    margin-bottom: 3px;
+    opacity: 0.8;
+    font-size: 0.9em;
+}
+
+.charts.container {
+    margin: auto;
+    margin-bottom: 50px;
+
+    p {
+        margin: 0;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .row {
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+    .col-md-3 {
+
+        .chart_num {
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+
+        padding: 0;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #959A11;
+    }
+
+    .text {
+        padding: 10px;
+
+        h4 {
+            margin-top: 20px;
+        }
+    }
+
+    .creator {
+        margin-bottom: 10px;
+    }
+
+    .others {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 20px;
+
+        .other {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            .chart_num {
+                font-weight: 700;
+                font-size: 1.2em;
+                color: #959A11;
             }
         }
     }

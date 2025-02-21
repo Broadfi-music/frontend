@@ -39,11 +39,6 @@
   justify-content: space-between;
   margin-top: 20px;
 }
-.contest .contestItem .head {
-  margin-bottom: 3px;
-  opacity: 0.8;
-  font-size: 0.9em;
-}
 .contest .contestItem .tags {
   display: flex;
   gap: 15px;
@@ -56,4 +51,70 @@
 }
 .contest .contestItem .tags .tag-green {
   border: 2px solid #02FF02;
+}
+.contest .contestItem .tags .tag-yellow {
+  border: 2px solid #959A11;
+}
+.contest .contestItem .tags .tag-red {
+  border: 2px solid #C20505;
+}
+
+.head {
+  margin-bottom: 3px;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+.charts.container {
+  margin: auto;
+  margin-bottom: 50px;
+}
+.charts.container p {
+  margin: 0;
+}
+.charts.container h1 {
+  margin-bottom: 20px;
+}
+.charts.container img {
+  width: 100%;
+}
+.charts.container .row {
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.charts.container .col-md-3 {
+  padding: 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #959A11;
+}
+.charts.container .col-md-3 .chart_num {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.charts.container .text {
+  padding: 10px;
+}
+.charts.container .text h4 {
+  margin-top: 20px;
+}
+.charts.container .creator {
+  margin-bottom: 10px;
+}
+.charts.container .others {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 20px;
+}
+.charts.container .others .other {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.charts.container .others .other .chart_num {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #959A11;
 }/*# sourceMappingURL=styles.css.map */
