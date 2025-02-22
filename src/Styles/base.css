@@ -20,4 +20,13 @@ body {
 
 .col-3 {
   width: 30%;
+}
+
+.btn.btn-danger {
+  background-color: #c21e05 !important;
+  padding: 15px 25px;
+  transition: 0.3s ease-out;
+}
+.btn.btn-danger:hover {
+  filter: brightness(0.9);
 }/*# sourceMappingURL=base.css.map */

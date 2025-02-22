@@ -19,3 +19,13 @@ body {
 .col-3 {
     width: 30%;
 }
+
+.btn.btn-danger {
+    background-color: $red !important;
+    padding: 15px 25px;
+    transition: 0.3s ease-out;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+}

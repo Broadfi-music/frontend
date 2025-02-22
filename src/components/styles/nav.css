@@ -11,12 +11,4 @@
 }
 .navbar a.nav-link {
   color: white;
-}
-.navbar button {
-  background-color: #c21e05 !important;
-  padding: 15px 25px;
-  transition: 0.3s ease-out;
-}
-.navbar button:hover {
-  filter: brightness(0.9);
 }/*# sourceMappingURL=nav.css.map */

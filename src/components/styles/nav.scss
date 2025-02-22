@@ -11,14 +11,4 @@
     a.nav-link {
         color: white;
     }
-
-    button {
-        background-color: $red !important;
-        padding: 15px 25px;
-        transition: 0.3s ease-out;
-
-        &:hover {
-            filter: brightness(0.9);
-        }
-    }
 }
