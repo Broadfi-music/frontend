@@ -68,6 +68,9 @@
 .charts.container {
   margin: auto;
   margin-bottom: 50px;
+  border: 2px solid #2c2c2c;
+  padding: 50px;
+  border-radius: 20px;
 }
 .charts.container p {
   margin: 0;
@@ -82,16 +85,17 @@
   margin-top: 30px;
   justify-content: space-between;
 }
-.charts.container .col-md-3 {
+.charts.container .col-3 {
   padding: 0;
   padding: 10px;
   border-radius: 10px;
   border: 2px solid #959A11;
 }
-.charts.container .col-md-3 .chart_num {
+.charts.container .col-3 .chart_num {
   text-align: center;
   font-weight: 700;
   font-size: 1.2em;
+  margin-bottom: 10px;
 }
 .charts.container .text {
   padding: 10px;
@@ -99,7 +103,7 @@
 .charts.container .text h4 {
   margin-top: 20px;
 }
-.charts.container .creator {
+.charts.container .top-tracks .creator {
   margin-bottom: 10px;
 }
 .charts.container .others {
@@ -117,4 +121,111 @@
   font-weight: 700;
   font-size: 1.2em;
   color: #959A11;
+}
+.charts.container .creators .row {
+  justify-content: center;
+  gap: 50px;
+}
+.charts.container .creators .row .creator {
+  position: relative;
+  padding-top: 70px;
+}
+.charts.container .creators .row .creator .chart_num {
+  margin: auto;
+  padding: 10px 20px;
+  background-color: rgb(81, 159, 248);
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  z-index: 10;
+}
+.charts.container .creators .row .creator .text {
+  border: 3px solid #959A11;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.charts.container .creators .row .creator .text .name {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.charts.container .creators .row .creator img {
+  width: 120px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.charts.container .others.cr .head {
+  width: 600px;
+}
+.charts.container .others.cr .other.cr {
+  width: 600px;
+}
+.charts.container .others.cr .other.cr img {
+  width: 30px;
+}
+.charts.container .others.cr .col {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.charts.container .others.cr .col h3 {
+  margin: 0;
+}
+.charts.container .more {
+  text-align: center;
+  color: #c21e05;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.top-playlists {
+  margin-bottom: 50px;
+}
+.top-playlists h1 {
+  margin-bottom: 30px;
+}
+.top-playlists .row {
+  justify-content: space-between;
+  gap: 30px;
+}
+.top-playlists .row .col-3 {
+  border: 2px solid #2c2c2c;
+  padding: 0;
+  border-radius: 20px;
+}
+.top-playlists .row .col-3 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.top-playlists .row .col-3 .text {
+  padding: 30px;
+  padding-top: 0;
+}
+.top-playlists .row .col-3 .tag {
+  padding: 10px 30px;
+  font-weight: 600;
+  border: 2px solid #02FF02;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.top-playlists .row .col-3 .name {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.top-playlists .row .col-3 .d-flex {
+  margin-top: 10px;
+}
+.top-playlists .row .col-3 .col {
+  flex: none;
 }/*# sourceMappingURL=styles.css.map */

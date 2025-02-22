@@ -1,6 +1,7 @@
 import Charts from "../components/Charts";
 import Contest from "../components/Contest";
 import HeroSection from "../components/HeroSection";
+import Playlists from "../components/Playlists";
 
 function HomePage() {
 	return (
@@ -8,6 +9,7 @@ function HomePage() {
 			<HeroSection />
             <Contest />
             <Charts />
+            <Playlists />
 		</>
 	);
 }

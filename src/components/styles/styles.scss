@@ -79,6 +79,9 @@
 .charts.container {
     margin: auto;
     margin-bottom: 50px;
+    border: 2px solid #2c2c2c;
+    padding: 50px;
+    border-radius: 20px;
 
     p {
         margin: 0;
@@ -97,18 +100,18 @@
         justify-content: space-between;
     }
 
-    .col-md-3 {
+    .col-3 {
+        padding: 0;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #959A11;
 
         .chart_num {
             text-align: center;
             font-weight: 700;
             font-size: 1.2em;
+            margin-bottom: 10px;
         }
-
-        padding: 0;
-        padding: 10px;
-        border-radius: 10px;
-        border: 2px solid #959A11;
     }
 
     .text {
@@ -119,7 +122,7 @@
         }
     }
 
-    .creator {
+    .top-tracks .creator {
         margin-bottom: 10px;
     }
 
@@ -138,6 +141,135 @@
                 font-weight: 700;
                 font-size: 1.2em;
                 color: #959A11;
+            }
+        }
+    }
+
+    .creators {
+        .row {
+            justify-content: center;
+            gap: 50px;
+
+            .creator {
+                position: relative;
+                padding-top: 70px;
+
+                .chart_num {
+                    margin: auto;
+                    padding: 10px 20px;
+                    background-color: rgb(81, 159, 248);
+                    width: fit-content;
+                    text-align: center;
+                    border-radius: 5px;
+                    position: relative;
+                    z-index: 10;
+                }
+
+                .text {
+                    border: 3px solid #959A11;
+                    border-radius: 10px;
+                    padding: 20px;
+                    text-align: center;
+
+                    .name {
+                        margin-top: 10px;
+                        font-size: 1.2em;
+                        font-weight: 600;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                img {
+                    width: 120px;
+                    position: absolute;
+                    top: 0px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+    .others.cr {
+        .head {
+            width: 600px;
+        }
+
+        .other.cr {
+            width: 600px;
+
+            img {
+                width: 30px;
+            }
+        }
+
+        .col {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            h3 {
+                margin: 0;
+            }
+        }
+    }
+
+    .more {
+        text-align: center;
+        color: $red;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+}
+
+.top-playlists {
+    margin-bottom: 50px;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .row {
+        justify-content: space-between;
+        gap: 30px;
+
+        .col-3 {
+            border: 2px solid #2c2c2c;
+            padding: 0;
+            border-radius: 20px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .text {
+                padding: 30px;
+                padding-top: 0;
+            }
+
+            .tag {
+                padding: 10px 30px;
+                font-weight: 600;
+                border: 2px solid #02FF02;
+                width: fit-content;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+            .name {
+                font-size: 1.2em;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            .d-flex {
+                margin-top: 10px;
+            }
+
+            .col {
+                flex: none;
             }
         }
     }
