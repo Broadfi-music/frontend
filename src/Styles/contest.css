@@ -87,6 +87,7 @@
   justify-content: start;
   align-items: center;
   gap: 40px;
+  margin-top: 30px;
 }
 .contest .participant-info .image {
   width: 300px;
@@ -99,19 +100,26 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.contest .participant-info .text h2 {
+  font-weight: 700;
+}
 .contest .participant-info .text .tags {
   display: flex;
   gap: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .contest .participant-info .text .tags .tag {
   padding: 10px 30px;
   border-radius: 10px;
   border: 2px solid #02FF02;
 }
+.contest .participant-info .text .tags .tag.remix {
+  border-color: #959A11;
+}
 .contest .participant-info .text .part-info {
   display: flex;
-  margin: 10px 0;
+  margin: 20px 0;
+  gap: 30px;
 }
 .contest .participant-info .text .part-info p {
   margin: 0;
@@ -123,6 +131,31 @@
 }
 .contest .participant-info .text .part-info > * img {
   width: 25px;
+}
+.contest .participant-info .text .worth {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+.contest .participant-info .text .worth span {
+  color: #02FF02;
+}
+.contest .participant-info .text input.form-control {
+  padding: 0.7em 1.4em;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #2c2c2c;
+  color: white;
+  box-shadow: none;
+  margin-bottom: 15px;
+}
+.contest .participant-info .text input.form-control::-moz-placeholder {
+  color: #535353;
+}
+.contest .participant-info .text input.form-control::placeholder {
+  color: #535353;
+}
+.contest .participant-info .text .btn {
+  width: 100%;
+  font-weight: 600;
 }
 .contest .participant-info img.img {
   width: 100%;

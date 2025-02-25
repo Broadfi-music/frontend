@@ -65,7 +65,7 @@ function Contest() {
 				<div className="text">
 					<div className="tags">
 						<div className="tag">Rap</div>
-						<div className="tag">Remix</div>
+						<div className="tag remix">Remix</div>
 					</div>
 					<h2>The love I have for you </h2>
 					<div className="part-info">

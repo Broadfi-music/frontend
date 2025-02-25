@@ -97,6 +97,7 @@
         justify-content: start;
         align-items: center;
         gap: 40px;
+        margin-top: 30px;
 
         .image {
             width: 300px;
@@ -112,21 +113,31 @@
         }
 
         .text {
+
+            h2 {
+                font-weight: 700;
+            }
+
             .tags {
                 display: flex;
                 gap: 15px;
-                margin-bottom: 10px;
+                margin-bottom: 15px;
 
                 .tag {
                     padding: 10px 30px;
                     border-radius: 10px;
                     border: 2px solid #02FF02;
+
+                    &.remix {
+                        border-color: #959A11;
+                    }
                 }
             }
 
             .part-info {
                 display: flex;
-                margin: 10px 0;
+                margin: 20px 0;
+                gap: 30px;
 
                 p {
                     margin: 0;
@@ -141,6 +152,33 @@
                         width: 25px;
                     }
                 }
+            }
+
+            .worth {
+                margin-bottom: 20px;
+                margin-left: 30px;
+
+                span {
+                    color: #02FF02;
+                }
+            }
+
+            input.form-control {
+                padding: 0.7em 1.4em;
+                background-color: rgba(255, 255, 255, 0.05);
+                border: 2px solid #2c2c2c;
+                color: white;
+                box-shadow: none;
+                margin-bottom: 15px;
+
+                &::placeholder {
+                    color: #535353;
+                }
+            }
+
+            .btn {
+                width: 100%;
+                font-weight: 600;
             }
         }
 
