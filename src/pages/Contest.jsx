@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../Styles/contest.css";
 import ContestDetails from "../components/ContestDetails";
-import UploadFile from "../components/UploadFile";
+import UploadFileContest from "../components/UploadFileContest";
 import PartItem from "../components/PartItem";
 
 function Contest() {
@@ -45,7 +45,7 @@ function Contest() {
 					</div>
 				</div>
 				<div className="content">
-					{action === "details" ? <ContestDetails /> : <UploadFile />}
+					{action === "details" ? <ContestDetails /> : <UploadFileContest />}
 				</div>
 				<div className="show-more">Show More</div>
 			</div>
