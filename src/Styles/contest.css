@@ -108,12 +108,12 @@
   width: 300px;
   position: relative;
 }
-.contest .participant-info .image .play-btn {
+.contest .participant-info .image i {
   position: absolute;
-  inset: 0;
-  top: 50%;
-  left: 50%;
+  font-size: 3em;
   transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
 .contest .participant-info .text h2 {
   font-weight: 700;
@@ -144,8 +144,9 @@
   align-items: center;
   gap: 10px;
 }
-.contest .participant-info .text .part-info > * img {
-  width: 25px;
+.contest .participant-info .text .part-info > * i {
+  font-size: 1.2em;
+  cursor: pointer;
 }
 .contest .participant-info .text .worth {
   margin-bottom: 20px;
@@ -210,8 +211,9 @@
   align-items: center;
   gap: 10px;
 }
-.contest .participants .row .participant .part-info > * img {
-  width: 25px;
+.contest .participants .row .participant .part-info > * i {
+  font-size: 1.2em;
+  cursor: pointer;
 }
 .contest .participants .row .participant h5 {
   margin-top: 10px;

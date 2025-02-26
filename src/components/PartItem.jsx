@@ -7,15 +7,15 @@ function PartItem({ name, image, likes, dislikes, listens, worth }) {
 			<div className="text">
 				<div className="part-info">
 					<div className="listens">
-						<img src="/Images/listen.png" alt="Listens" />
+						<i class="fa-solid fa-play"></i>
 						<p>{listens}</p>
 					</div>
 					<div className="like">
-						<img src="/Images/like.png" alt="Like" />
+						<i class="fa-solid fa-heart"></i>
 						<p>{likes}</p>
 					</div>
 					<div className="dislike">
-						<img src="/Images/dislike.png" alt="Dislike" />
+						<i class="fa-solid fa-thumbs-down"></i>
 						<p>{dislikes}</p>
 					</div>
 				</div>
@@ -23,7 +23,7 @@ function PartItem({ name, image, likes, dislikes, listens, worth }) {
 				<div className="worth">
 					<span>{worth}</span>BRD
 				</div>
-                <button className="btn btn-danger">Vote</button>
+				<button className="btn btn-danger">Vote</button>
 			</div>
 		</div>
 	);

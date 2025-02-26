@@ -45,7 +45,11 @@ function Contest() {
 					</div>
 				</div>
 				<div className="content">
-					{action === "details" ? <ContestDetails /> : <UploadFileContest />}
+					{action === "details" ? (
+						<ContestDetails />
+					) : (
+						<UploadFileContest />
+					)}
 				</div>
 				<div className="show-more">Show More</div>
 			</div>
@@ -56,11 +60,7 @@ function Contest() {
 						src="/Images/p1.png"
 						alt="Participant"
 					/>
-					<img
-						className="play-btn"
-						src="/public/Images/Play.png"
-						alt="Play"
-					/>
+					<i class="fa-solid fa-play"></i>
 				</div>
 				<div className="text">
 					<div className="tags">
@@ -70,27 +70,30 @@ function Contest() {
 					<h2>The love I have for you </h2>
 					<div className="part-info">
 						<div className="listens">
-							<img src="/Images/listen.png" alt="Listens" />
+							<i class="fa-solid fa-play"></i>
 							<p>123</p>
 						</div>
 						<div className="like">
-							<img src="/Images/like.png" alt="Like" />
+							<i class="fa-solid fa-heart"></i>
 							<p>14</p>
 						</div>
 						<div className="dislike">
-							<img src="/Images/dislike.png" alt="Dislike" />
+							<i class="fa-solid fa-thumbs-down"></i>
 							<p>20</p>
 						</div>
 					</div>
 					<div className="worth">
 						<span>0.2040</span>BRD
 					</div>
-                    <div className="vote">
-                        <input className="form-control" type="text" name="amountBRD" placeholder="BRD Amount" />
-                        <button className="btn btn-danger">
-                            Vote
-                        </button>
-                    </div>
+					<div className="vote">
+						<input
+							className="form-control"
+							type="text"
+							name="amountBRD"
+							placeholder="BRD Amount"
+						/>
+						<button className="btn btn-danger">Vote</button>
+					</div>
 				</div>
 			</div>
 			<div className="participants container">

@@ -29,4 +29,8 @@ body {
 }
 .btn.btn-danger:hover {
   filter: brightness(0.9);
+}
+
+i {
+  overflow: hidden;
 }/*# sourceMappingURL=base.css.map */
