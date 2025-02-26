@@ -4,7 +4,7 @@ import "./styles/styles.css";
 
 function Contest() {
 	return (
-		<div className="contest container">
+		<div className="contest container mt-5">
 			<h1>Contest</h1>
 			<div className="row">
 				<ContestItem

@@ -10,6 +10,7 @@ function UploadFileContest() {
 			setImage(URL.createObjectURL(file));
 		}
 	};
+
 	return (
 		<form className="contest-upload" action="#">
 			<div className="image-uploader">
@@ -53,8 +54,10 @@ function UploadFileContest() {
 				</div>
 				<p>
 					Every song token price start with 0.000789BRD. Every
-					LIKES,VOTE increase the token price why dislike decreases it.
+					LIKES,VOTE increase the token price why dislike decreases
+					it.
 				</p>
+				<button className="btn btn-danger">Upload</button>
 			</div>
 		</form>
 	);

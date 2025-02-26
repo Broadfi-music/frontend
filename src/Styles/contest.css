@@ -238,6 +238,15 @@
   padding: 15px;
   padding-left: 30px;
 }
+.contest form.contest-upload .btn {
+  padding: 15px 40px;
+  margin-left: auto;
+  display: block;
+}
+.contest form.contest-upload p {
+  margin-bottom: 10px;
+  margin-top: 0 !important;
+}
 .contest form.contest-upload .col {
   flex: none;
   width: 60%;
