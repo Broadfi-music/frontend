@@ -20,14 +20,22 @@ body {
     width: 30%;
 }
 
-.btn.btn-danger {
-    background-color: $red !important;
+.btn {
     padding: 15px 25px;
     transition: 0.3s ease-out;
+    color: white;
 
     &:hover {
         filter: brightness(0.9);
     }
+}
+
+.btn-danger {
+    background-color: $red !important;
+}
+
+.btn-yellow {
+    background-color: #959A11 !important;
 }
 
 i {

@@ -1,0 +1,83 @@
+.staking {
+  margin-bottom: 100px;
+}
+.staking h1 {
+  margin-bottom: 10px;
+}
+.staking p.info {
+  opacity: 0.9;
+}
+.staking .amount {
+  padding: 20px;
+  border: 2px solid #2c2c2c;
+  border-radius: 15px;
+}
+.staking .amount h2 {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.staking .amount input {
+  display: inline-block;
+  width: 30%;
+  font-size: 1em;
+  background-color: black;
+  border: 2px solid #2c2c2c;
+  color: white;
+  box-shadow: none;
+}
+.staking .amount input::-webkit-outer-spin-button, .staking .amount input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.staking .amount input[type=number] {
+  -moz-appearance: textfield;
+}
+.staking .amount .col {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 20px;
+}
+.staking .amount .col p {
+  margin: 0;
+}
+.staking .amount .col img {
+  width: 60px;
+}
+.staking .time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.staking .time > * {
+  padding: 15px 40px;
+  border: 2px solid #2c2c2c;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.staking .time > *:hover {
+  border-color: #4f4f4f;
+}
+.staking .btns {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+.staking .btn {
+  width: 100%;
+  display: block;
+}
+.staking .positions .section {
+  padding: 30px;
+  border: 2px solid #2c2c2c;
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.staking .positions p span {
+  color: #02FF02;
+}/*# sourceMappingURL=stake.css.map */

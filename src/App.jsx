@@ -5,6 +5,7 @@ import Contest from "./pages/Contest";
 import HowItWorks from "./pages/HowItWorks";
 import Playlists from "./pages/Playlists";
 import Playlist from "./pages/Playlist";
+import Staking from "./pages/Staking";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
                     <Route path="/how-it-works" Component={HowItWorks}/>
                     <Route path="/playlists" Component={Playlists}/>
                     <Route path="/playlist" Component={Playlist}/>
+                    <Route path="/stake-to-earn" Component={Staking}/>
                 </Routes>
 			</Router>
 		</>

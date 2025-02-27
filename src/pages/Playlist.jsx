@@ -90,7 +90,7 @@ function Playlist() {
 			</div>
 
 			<div className="other-playlists mt-5">
-				<h2 className="mb-4">Playlists</h2>
+				<h2 className="mb-4 mx-3">Playlists</h2>
 				<div className="row">
 					<PlaylistItem
 						name={"The big story of the black boy"}
