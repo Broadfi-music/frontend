@@ -81,4 +81,114 @@
      object-fit: cover;
   border-radius: 5px;
   position: relative;
+}
+
+.playlist_page {
+  margin-bottom: 100px;
+}
+.playlist_page .hero {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+}
+.playlist_page .hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.playlist_page .name {
+  margin-top: 20px;
+}
+.playlist_page .tags {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.playlist_page .tags .tag {
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid #02FF02;
+}
+.playlist_page .col {
+  margin-top: 15px;
+}
+.playlist_page .creator {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.playlist_page .creator p {
+  margin: 0;
+}
+.playlist_page .worth span {
+  color: #02FF02;
+}
+.playlist_page .stake {
+  display: flex;
+  gap: 10px;
+}
+.playlist_page .m-info {
+  display: flex;
+  gap: 60px;
+}
+.playlist_page .part-info {
+  display: flex;
+  gap: 30px;
+}
+.playlist_page .part-info p {
+  margin: 0;
+}
+.playlist_page .part-info > * {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.playlist_page .part-info > * i {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.playlist_page .btn {
+  width: 50%;
+}
+.playlist_page input.form-control {
+  padding: 0.7em 1.4em;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #2c2c2c;
+  color: white;
+  box-shadow: none;
+  transition: 0.3s ease;
+}
+.playlist_page input.form-control::-moz-placeholder {
+  color: #535353;
+}
+.playlist_page input.form-control::placeholder {
+  color: #535353;
+}
+.playlist_page .tracks .header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 10px 0;
+  border-bottom: 2px solid #2c2c2c;
+  margin-bottom: 30px;
+}
+.playlist_page .tracks .header .track-name {
+  width: 30%;
+}
+.playlist_page .tracks .track {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.playlist_page .tracks .track .img {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 27%;
+}
+.playlist_page .tracks .track img {
+  width: 70px;
 }/*# sourceMappingURL=playlists.css.map */

@@ -33,4 +33,8 @@ body {
 
 i {
   overflow: hidden;
+}
+
+.col {
+  flex: none;
 }/*# sourceMappingURL=base.css.map */

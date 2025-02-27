@@ -185,31 +185,34 @@
   margin-top: 50px;
 }
 
-.top-playlists {
+.top-playlists, .other-playlists {
   margin-bottom: 50px;
 }
-.top-playlists h1 {
+.top-playlists h1, .other-playlists h1 {
   margin-bottom: 30px;
 }
-.top-playlists .row {
+.top-playlists .row, .other-playlists .row {
   justify-content: space-between;
   gap: 30px;
+  padding: 0 20px;
 }
-.top-playlists .row .col-3 {
+.top-playlists .row .col-3, .other-playlists .row .col-3 {
   border: 2px solid #2c2c2c;
   padding: 0;
   border-radius: 20px;
+  color: white;
+  text-decoration: none;
 }
-.top-playlists .row .col-3 img {
+.top-playlists .row .col-3 img, .other-playlists .row .col-3 img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.top-playlists .row .col-3 .text {
+.top-playlists .row .col-3 .text, .other-playlists .row .col-3 .text {
   padding: 30px;
   padding-top: 0;
 }
-.top-playlists .row .col-3 .tag {
+.top-playlists .row .col-3 .tag, .other-playlists .row .col-3 .tag {
   padding: 10px 30px;
   font-weight: 600;
   border: 2px solid #02FF02;
@@ -218,14 +221,14 @@
   border-radius: 10px;
   margin-bottom: 10px;
 }
-.top-playlists .row .col-3 .name {
+.top-playlists .row .col-3 .name, .other-playlists .row .col-3 .name {
   font-size: 1.2em;
   font-weight: 500;
   margin-bottom: 10px;
 }
-.top-playlists .row .col-3 .d-flex {
+.top-playlists .row .col-3 .d-flex, .other-playlists .row .col-3 .d-flex {
   margin-top: 10px;
 }
-.top-playlists .row .col-3 .col {
+.top-playlists .row .col-3 .col, .other-playlists .row .col-3 .col {
   flex: none;
 }/*# sourceMappingURL=styles.css.map */

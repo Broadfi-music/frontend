@@ -223,7 +223,7 @@
     }
 }
 
-.top-playlists {
+.top-playlists, .other-playlists {
     margin-bottom: 50px;
 
     h1 {
@@ -233,44 +233,48 @@
     .row {
         justify-content: space-between;
         gap: 30px;
+        padding: 0 20px;
 
-        .col-3 {
-            border: 2px solid #2c2c2c;
-            padding: 0;
-            border-radius: 20px;
+            .col-3 {
+                border: 2px solid #2c2c2c;
+                padding: 0;
+                border-radius: 20px;
+                color: white;
+                text-decoration: none;
 
-            img {
-                width: 100%;
-                object-fit: cover;
-            }
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
 
-            .text {
-                padding: 30px;
-                padding-top: 0;
-            }
+                .text {
+                    padding: 30px;
+                    padding-top: 0;
+                }
 
-            .tag {
-                padding: 10px 30px;
-                font-weight: 600;
-                border: 2px solid #02FF02;
-                width: fit-content;
-                border-radius: 10px;
-                margin-bottom: 10px;
-            }
+                .tag {
+                    padding: 10px 30px;
+                    font-weight: 600;
+                    border: 2px solid #02FF02;
+                    width: fit-content;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                }
 
-            .name {
-                font-size: 1.2em;
-                font-weight: 500;
-                margin-bottom: 10px;
-            }
+                .name {
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
 
-            .d-flex {
-                margin-top: 10px;
-            }
+                .d-flex {
+                    margin-top: 10px;
+                }
 
-            .col {
-                flex: none;
+                .col {
+                    flex: none;
+                }
             }
         }
-    }
+    
 }

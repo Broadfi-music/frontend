@@ -93,3 +93,136 @@
         position: relative;
     }
 }
+
+.playlist_page {
+    margin-bottom: 100px;
+
+    .hero {
+        width: 100%;
+        height: 350px;
+        border-radius: 15px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .name {
+        margin-top: 20px;
+    }
+
+    .tags {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        .tag {
+            padding: 10px 30px;
+            border-radius: 10px;
+            border: 2px solid #02FF02;
+        }
+    }
+
+    .col {
+        margin-top: 15px;
+    }
+
+    .creator {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .worth {
+        span {
+            color: #02FF02;
+        }
+    }
+
+    .stake {
+        display: flex;
+        gap: 10px;
+    }
+
+    .m-info {
+        display: flex;
+        gap: 60px;
+    }
+
+    .part-info {
+        display: flex;
+        gap: 30px;
+
+        p {
+            margin: 0;
+        }
+
+        &>* {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            i {
+                font-size: 1.2em;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .btn {
+        width: 50%;
+    }
+
+    input.form-control {
+        padding: 0.7em 1.4em;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 2px solid #2c2c2c;
+        color: white;
+        box-shadow: none;
+        transition: 0.3s ease;
+
+        &::placeholder {
+            color: #535353;
+        }
+    }
+
+    .tracks {
+        .header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1em;
+            font-weight: 500;
+            padding: 10px 0;
+            border-bottom: 2px solid #2c2c2c;
+            margin-bottom: 30px;
+
+            .track-name {
+                width: 30%;
+            }
+        }
+
+        .track {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            .img {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                width: 27%;
+            }
+
+            img {
+                width: 70px;
+            }
+        }
+    }
+}

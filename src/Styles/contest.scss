@@ -89,19 +89,19 @@
         }
     }
 
-    input.form-control {
-        padding: 0.7em 1.4em;
-        background-color: rgba(255, 255, 255, 0.05);
-        border: 2px solid #2c2c2c;
-        color: white;
-        box-shadow: none;
-        margin-bottom: 15px;
-        transition: 0.3s ease;
-
-        &::placeholder {
-            color: #535353;
+        input.form-control {
+            padding: 0.7em 1.4em;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 2px solid #2c2c2c;
+            color: white;
+            box-shadow: none;
+            margin-bottom: 15px;
+            transition: 0.3s ease;
+    
+            &::placeholder {
+                color: #535353;
+            }
         }
-    }
 
     .participant-info {
         border: 2px solid #2c2c2c;
