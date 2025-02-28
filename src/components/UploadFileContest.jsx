@@ -22,7 +22,7 @@ function UploadFileContest() {
 							className="image-preview"
 						/>
 						<label className="upload-button uploaded">
-							Add image
+							Change image
 							<input
 								type="file"
 								accept="image/*"

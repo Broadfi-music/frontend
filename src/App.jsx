@@ -1,4 +1,3 @@
-import { TonConnect } from "@tonconnect/sdk";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
@@ -7,10 +6,9 @@ import HowItWorks from "./pages/HowItWorks";
 import Playlists from "./pages/Playlists";
 import Playlist from "./pages/Playlist";
 import Staking from "./pages/Staking";
+import './Styles/media-queries.css';
 
 function App() {
-	const tonConnect = new TonConnect();
-
 	return (
 		<>
 			<Router>

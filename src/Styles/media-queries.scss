@@ -1,0 +1,265 @@
+// Tablet Sizes
+
+@media (max-width: 800px) {
+    .navbar {
+        .navbar-nav {
+            flex-direction: row;
+        }
+    }
+
+    .hero-section {
+        .row {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .col {
+            width: 100%;
+        }
+    }
+
+    .contest,
+    .charts {
+        .row {
+            gap: 20px;
+        }
+
+        .col-3 {
+            width: 48%;
+        }
+    }
+
+    .contest {
+        .info {
+            .text {
+                flex-direction: column-reverse;
+                align-items: start;
+                justify-content: end;
+                gap: 30px;
+                padding: 30px;
+
+                .content {
+                    margin-left: auto;
+                }
+            }
+        }
+
+        .participants {
+            .row {
+                gap: 20px !important;
+            }
+        }
+
+        .more-info {
+            .row>* {
+                padding: 0;
+            }
+        }
+
+    }
+
+    form {
+        gap: 0;
+        justify-content: space-around;
+    }
+
+    .creators {
+        .col-md-3 {
+            width: 100%;
+        }
+    }
+
+    .top-playlists {
+
+        .row {
+            gap: 20px;
+        }
+
+        .col-3 {
+            width: 48%;
+        }
+    }
+
+}
+
+@media (max-width: 766px) {
+    .container {
+        width: 95% !important;
+        max-width: 95% !important;
+    }
+
+    .contest {
+        .more-info .row {
+            gap: 0;
+            padding: 0 15px;
+
+            &>* {
+                padding: 20px 0;
+                border-bottom: 1px solid #ff5b5b;
+            }
+        }
+
+    }
+
+    form {
+        padding: 20px !important;
+        gap: 20px !important;
+        flex-direction: column;
+
+        .image-uploader {
+            height: 300px;
+        }
+
+        &>* {
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .contest .participant-info {
+        flex-direction: column;
+
+        &>* {
+            width: 100% !important;
+        }
+    }
+
+    .playlist_page {
+        .col {
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .m-info {
+            justify-content: center;
+        }
+
+        .part-info {
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }
+
+    .playlists {
+        form {
+            flex-direction: column;
+        }
+    }
+}
+
+// Phone Sizes
+
+@media (max-width: 500px) {
+    .navbar {
+        .logo {
+            font-size: 1.7em;
+        }
+
+        .navbar-nav {
+            display: none;
+        }
+
+        .menu-icon {
+            display: flex !important;
+        }
+    }
+
+    .contest {
+
+        form.contest-upload {
+            padding: 0 !important;
+        }
+
+        .more-info .content {
+            display: block !important;
+        }
+
+        .info {
+            img {
+                height: 300px;
+            }
+        }
+
+        .content {
+            display: none !important;
+        }
+
+        .mobile {
+            display: flex !important;
+        }
+    }
+
+    .contest,
+    .charts {
+
+        .col-3 {
+            width: 100%;
+        }
+    }
+
+    .top-playlists {
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .row {
+            padding: 0;
+
+            &>* {
+                width: 100%;
+            }
+        }
+    }
+
+    .playlists {
+        form {
+            margin-bottom: 40px !important;
+        }
+    }
+
+    .playlist_page {
+        .title {
+            flex-direction: column;
+        }
+
+        .stake {
+            flex-direction: column;
+            margin-top: 10px;
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        .tracks {
+            .track {
+                align-items: center;
+            }
+
+            .img {
+                width: fit-content !important;
+                gap: 20px !important;
+
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .container {
+        width: 93% !important;
+        max-width: 93% !important;
+    }
+
+    .top-playlists {
+        padding: 0 !important;
+
+        .playlist {
+            overflow: auto;
+        }
+    }
+}

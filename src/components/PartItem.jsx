@@ -2,7 +2,7 @@ import React from "react";
 
 function PartItem({ name, image, likes, dislikes, listens, worth }) {
 	return (
-		<div className="participant col-md-3">
+		<div className="participant col-3">
 			<img className="image" src={image} alt={name} />
 			<div className="text">
 				<div className="part-info">

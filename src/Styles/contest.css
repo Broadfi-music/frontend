@@ -5,19 +5,22 @@
 .contest {
   margin-top: 0;
 }
-.contest .info {
+.contest .info,
+.contest .mobile {
   position: relative;
   padding: 0;
   border-radius: 10px;
 }
-.contest .info img {
+.contest .info img,
+.contest .mobile img {
   width: 100%;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
 }
-.contest .info .text {
+.contest .info .text,
+.contest .mobile .text {
   position: absolute;
   inset: 0;
   background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.6));
@@ -26,19 +29,38 @@
   align-items: end;
   padding: 50px;
 }
-.contest .info .text .content {
+.contest .info .text .content,
+.contest .mobile .text .content {
   display: flex;
   align-items: start;
   gap: 40px;
 }
-.contest .info .text .btn {
+.contest .info .text .btn,
+.contest .mobile .text .btn {
   padding: 10px 20px;
 }
-.contest .info .text h1 {
+.contest .info .text h1,
+.contest .mobile .text h1 {
   margin: 0;
 }
-.contest .info .text img {
+.contest .info .text img,
+.contest .mobile .text img {
   height: 40px;
+}
+.contest .mobile {
+  margin: 30px 0;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.contest .mobile img {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .contest .more-info {
   padding: 0;
@@ -183,7 +205,7 @@
   margin-top: 30px;
 }
 .contest .participants .row {
-  gap: 50px;
+  gap: 30px;
 }
 .contest .participants .row .participant {
   border: 2px solid #2c2c2c;

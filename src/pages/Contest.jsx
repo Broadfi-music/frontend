@@ -26,6 +26,17 @@ function Contest() {
 					</div>
 				</div>
 			</div>
+			<div className="info mobile content">
+				<div className="col">
+					<p>Hosted by</p>
+					<img src="/Images/logo.png" alt="BroadFi" />
+				</div>
+				<div className="col">
+					<h5>Deadline:</h5>
+					<p>February 15, 2025</p>
+					<div className="btn btn-danger">Enter Contest</div>
+				</div>
+			</div>
 			<div className="more-info container mt-4">
 				<div className="row">
 					<div

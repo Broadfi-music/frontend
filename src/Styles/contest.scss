@@ -3,7 +3,8 @@
 .contest {
     margin-top: 0;
 
-    .info {
+    .info,
+    .mobile {
         position: relative;
         padding: 0;
         border-radius: 10px;
@@ -41,6 +42,21 @@
             img {
                 height: 40px;
             }
+        }
+    }
+
+    .mobile {
+        margin: 30px 0;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+
+        img {
+            width: fit-content;
+            height: 50px !important;
+            object-fit: cover;
         }
     }
 
@@ -89,19 +105,19 @@
         }
     }
 
-        input.form-control {
-            padding: 0.7em 1.4em;
-            background-color: rgba(255, 255, 255, 0.05);
-            border: 2px solid #2c2c2c;
-            color: white;
-            box-shadow: none;
-            margin-bottom: 15px;
-            transition: 0.3s ease;
-    
-            &::placeholder {
-                color: #535353;
-            }
+    input.form-control {
+        padding: 0.7em 1.4em;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 2px solid #2c2c2c;
+        color: white;
+        box-shadow: none;
+        margin-bottom: 15px;
+        transition: 0.3s ease;
+
+        &::placeholder {
+            color: #535353;
         }
+    }
 
     .participant-info {
         border: 2px solid #2c2c2c;
@@ -208,7 +224,7 @@
         margin-top: 30px;
 
         .row {
-            gap: 50px;
+            gap: 30px;
 
             .participant {
                 border: 2px solid #2c2c2c;
