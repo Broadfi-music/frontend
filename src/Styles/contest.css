@@ -46,7 +46,7 @@
 .contest .more-info .row {
   margin: 0;
   padding: 15px;
-  background-color: #c21e05;
+  background-color: #E34830;
   text-align: center;
   font-weight: 600;
   border-radius: 5px 5px 0 0;
@@ -268,7 +268,7 @@
   border-radius: 10px;
 }
 .contest .upload-button {
-  background-color: #c21e05;
+  background-color: #E34830;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;

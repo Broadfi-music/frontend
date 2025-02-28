@@ -1,7 +1,9 @@
 function HowItWorks() {
 	return (
 		<>
-			<p>HowItWorks</p>
+			<div className="container">
+                <h1>Come join the movement with BroadFi</h1>
+            </div>
 		</>
 	);
 }

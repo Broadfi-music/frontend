@@ -98,7 +98,7 @@ function Contest() {
 			</div>
 			<div className="participants container">
 				<h2>Participants</h2>
-				<div className="row mt-5">
+				<div className="row mt-4">
 					<PartItem
 						image={"/Images/p1.png"}
 						name={"Emeka"}
