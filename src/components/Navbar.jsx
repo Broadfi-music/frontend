@@ -50,6 +50,7 @@ function Navbar() {
 					console.log("Wallet connected:", account);
 				} else {
 					console.log("Connection failed. Please try again.");
+                    
 				}
 			}, 2000); // Add a short delay to allow status update
 		} catch (error) {
