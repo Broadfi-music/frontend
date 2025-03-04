@@ -28,6 +28,22 @@ body {
     &:hover {
         filter: brightness(0.9);
     }
+
+    &.tonbtn {
+        background-color: auto;
+        padding: 0;
+
+        button {
+            background-color: $red !important;
+            padding: 15px 25px;
+            height: auto;
+            box-shadow: none;
+
+            &:hover {
+                transform: none;
+            }
+        }
+    }
 }
 
 .btn-danger {

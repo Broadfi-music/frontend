@@ -1,5 +1,7 @@
 {
-	"url": "http://localhost:5173/",
-	"name": "BroadFi",
-	"iconUrl": "./Images/logo2.png"
+	"url": "http://localhost:5173/", 
+	"name": "BroadFi", 
+	"iconUrl": "/Images/logo2.png", 
+	"termsOfUseUrl": "/terms",
+	"privacyPolicyUrl": "/privacy-policy"
 }

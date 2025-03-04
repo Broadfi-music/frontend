@@ -8,21 +8,21 @@ importers:
 
   .:
     dependencies:
-      '@tonconnect/sdk':
-        specifier: ^3.0.6
-        version: 3.0.6
+      '@tonconnect/ui-react':
+        specifier: 2.0.11
+        version: 2.0.11(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
       bootstrap:
         specifier: ^5.3.3
         version: 5.3.3(@popperjs/core@2.11.8)
       react:
-        specifier: ^19.0.0
-        version: 19.0.0
+        specifier: ^18.0.0
+        version: 18.0.0
       react-dom:
-        specifier: ^19.0.0
-        version: 19.0.0(react@19.0.0)
+        specifier: ^18.0.0
+        version: 18.0.0(react@18.0.0)
       react-router-dom:
         specifier: ^7.2.0
-        version: 7.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 7.2.0(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
     devDependencies:
       '@eslint/js':
         specifier: ^9.19.0
@@ -446,6 +446,15 @@ packages:
   '@tonconnect/sdk@3.0.6':
     resolution: {integrity: sha512-dJipe0Cw43p/7o3Pa6Y6h0QMDtY2V2YKzwdCqcYvmyCYadBNmvA+8ScH9QK5GpkngRJnYaWq+321lAaQTFpUwA==}
 
+  '@tonconnect/ui-react@2.0.11':
+    resolution: {integrity: sha512-h8E4zlbdNBJCAPgg6+O5ZkVDZh8mvnc82VRmhInSPLFAr6qDZbE+qSjRVm4lkuN1N/m24lhkDXFCFjvJ9CgCow==}
+    peerDependencies:
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+
+  '@tonconnect/ui@2.0.11':
+    resolution: {integrity: sha512-5TOhfEDeyY8R9oyEGavLU+DRmDW3wSGyxVshWhHisi8597cZIuG39HHNbP05WJBBjmVm/Kh/bhcHtfx7lQp/Ig==}
+
   '@types/cookie@0.6.0':
     resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
 
@@ -555,6 +564,9 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
+  classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
+
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
@@ -599,6 +611,10 @@ packages:
 
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
+
+  deepmerge@4.3.1:
+    resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
+    engines: {node: '>=0.10.0'}
 
   define-data-property@1.1.4:
     resolution: {integrity: sha512-rBMvIzlpA8v6E+SJZoo++HAYqsLrkg7MSfIinMPFhmkorw7X+dOXVJQs+QT69zGkzMyfDnIMN2Wid1+NbL3T+A==}
@@ -1086,10 +1102,10 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  react-dom@19.0.0:
-    resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
+  react-dom@18.0.0:
+    resolution: {integrity: sha512-XqX7uzmFo0pUceWFCt7Gff6IyIMzFUn7QMZrbrQfGxtaxXZIcGQzoNpRLE3fQLnS4XzLLPMZX2T9TRcSrasicw==}
     peerDependencies:
-      react: ^19.0.0
+      react: ^18.0.0
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -1111,8 +1127,8 @@ packages:
       react-dom:
         optional: true
 
-  react@19.0.0:
-    resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
+  react@18.0.0:
+    resolution: {integrity: sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A==}
     engines: {node: '>=0.10.0'}
 
   reflect.getprototypeof@1.0.10:
@@ -1148,8 +1164,8 @@ packages:
     resolution: {integrity: sha512-x/+Cz4YrimQxQccJf5mKEbIa1NzeCRNI5Ecl/ekmlYaampdNLPalVyIcCZNNH3MvmqBugV5TMYZXv0ljslUlaw==}
     engines: {node: '>= 0.4'}
 
-  scheduler@0.25.0:
-    resolution: {integrity: sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA==}
+  scheduler@0.21.0:
+    resolution: {integrity: sha512-1r87x5fz9MXqswA2ERLo0EbOAU74DpIUO090gIasYTqlVoJeMcl+Z1Rg7WHz+qtPujhS/hGIt9kxZOYBV3faRQ==}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -1260,6 +1276,10 @@ packages:
   typed-array-length@1.0.7:
     resolution: {integrity: sha512-3KS2b+kL7fsuk/eJZ7EQdnEmQoaho/r6KUef7hxvltNA5DR8NAUM+8wJMbJyZ4G9/7i3v5zPBIMN5aybAh2/Jg==}
     engines: {node: '>= 0.4'}
+
+  ua-parser-js@1.0.40:
+    resolution: {integrity: sha512-z6PJ8Lml+v3ichVojCiB8toQJBuwR42ySM4ezjXIqXK3M0HczmKQ3LF4rhU55PfD99KEEXQG6yb7iOMyvYuHew==}
+    hasBin: true
 
   unbox-primitive@1.1.0:
     resolution: {integrity: sha512-nWJ91DjeOkej/TA8pXQ3myruKpKEYgqvpw9lz4OPHj/NWFNluYrjbz9j01CJ8yKQd2g4jFoOkINCTW2I5LEEyw==}
@@ -1609,6 +1629,24 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
+  '@tonconnect/ui-react@2.0.11(react-dom@18.0.0(react@18.0.0))(react@18.0.0)':
+    dependencies:
+      '@tonconnect/ui': 2.0.11
+      react: 18.0.0
+      react-dom: 18.0.0(react@18.0.0)
+    transitivePeerDependencies:
+      - encoding
+
+  '@tonconnect/ui@2.0.11':
+    dependencies:
+      '@tonconnect/sdk': 3.0.6
+      classnames: 2.5.1
+      csstype: 3.1.3
+      deepmerge: 4.3.1
+      ua-parser-js: 1.0.40
+    transitivePeerDependencies:
+      - encoding
+
   '@types/cookie@0.6.0': {}
 
   '@types/estree@1.0.6': {}
@@ -1745,6 +1783,8 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
+  classnames@2.5.1: {}
+
   color-convert@2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -1786,6 +1826,8 @@ snapshots:
       ms: 2.1.3
 
   deep-is@0.1.4: {}
+
+  deepmerge@4.3.1: {}
 
   define-data-property@1.1.4:
     dependencies:
@@ -2411,30 +2453,33 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  react-dom@19.0.0(react@19.0.0):
+  react-dom@18.0.0(react@18.0.0):
     dependencies:
-      react: 19.0.0
-      scheduler: 0.25.0
+      loose-envify: 1.4.0
+      react: 18.0.0
+      scheduler: 0.21.0
 
   react-is@16.13.1: {}
 
-  react-router-dom@7.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  react-router-dom@7.2.0(react-dom@18.0.0(react@18.0.0))(react@18.0.0):
     dependencies:
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-      react-router: 7.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      react: 18.0.0
+      react-dom: 18.0.0(react@18.0.0)
+      react-router: 7.2.0(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
 
-  react-router@7.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  react-router@7.2.0(react-dom@18.0.0(react@18.0.0))(react@18.0.0):
     dependencies:
       '@types/cookie': 0.6.0
       cookie: 1.0.2
-      react: 19.0.0
+      react: 18.0.0
       set-cookie-parser: 2.7.1
       turbo-stream: 2.4.0
     optionalDependencies:
-      react-dom: 19.0.0(react@19.0.0)
+      react-dom: 18.0.0(react@18.0.0)
 
-  react@19.0.0: {}
+  react@18.0.0:
+    dependencies:
+      loose-envify: 1.4.0
 
   reflect.getprototypeof@1.0.10:
     dependencies:
@@ -2508,7 +2553,9 @@ snapshots:
       es-errors: 1.3.0
       is-regex: 1.2.1
 
-  scheduler@0.25.0: {}
+  scheduler@0.21.0:
+    dependencies:
+      loose-envify: 1.4.0
 
   semver@6.3.1: {}
 
@@ -2668,6 +2715,8 @@ snapshots:
       is-typed-array: 1.1.15
       possible-typed-array-names: 1.1.0
       reflect.getprototypeof: 1.0.10
+
+  ua-parser-js@1.0.40: {}
 
   unbox-primitive@1.1.0:
     dependencies:
