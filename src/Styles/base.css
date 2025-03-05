@@ -11,6 +11,19 @@ body {
   background-color: #0F0F0F;
   color: white !important;
   font-family: "Inter", sans-serif;
+  /* width */
+  /* Handle */
+  /* Handle on hover */
+}
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #E34830;
+  border-radius: 20px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  filter: brightness(1.1);
 }
 
 .logo {
@@ -58,4 +71,21 @@ i {
 
 .col {
   flex: none;
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #797979;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+footer img {
+  width: 20px;
+}
+footer p {
+  font-weight: 600;
+  margin: 0;
 }/*# sourceMappingURL=base.css.map */

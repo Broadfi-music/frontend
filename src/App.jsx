@@ -7,22 +7,26 @@ import HowItWorks from "./pages/HowItWorks";
 import Playlists from "./pages/Playlists";
 import Playlist from "./pages/Playlist";
 import Staking from "./pages/Staking";
+import Welcome from "./pages/Welcome";
 import "./Styles/media-queries.css";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
 		<>
-			<TonConnectUIProvider manifestUrl="http://localhost:5173/tonconnect-manifest.json">
+			<TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
 				<Router>
 					<Navbar />
 					<Routes>
-						<Route path="/" Component={HomePage} />
+						<Route path="/" Component={Welcome} />
+						<Route path="/homepage" Component={HomePage} />
 						<Route path="/contest" Component={Contest} />
 						<Route path="/how-it-works" Component={HowItWorks} />
 						<Route path="/playlists" Component={Playlists} />
 						<Route path="/playlist" Component={Playlist} />
 						<Route path="/stake-to-earn" Component={Staking} />
 					</Routes>
+                    <Footer />
 				</Router>
 			</TonConnectUIProvider>
 		</>

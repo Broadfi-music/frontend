@@ -9,6 +9,22 @@ body {
     background-color: $dark;
     color: white !important;
     font-family: 'Inter', sans-serif;
+
+    /* width */
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $red;
+        border-radius: 20px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        filter: brightness(1.1);
+    }
 }
 
 .logo {
@@ -60,4 +76,23 @@ i {
 
 .col {
     flex: none;
+}
+
+footer {
+    margin-top: 20px; 
+    margin-bottom: 30px;
+    color: #797979;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 20px;
+    }
+
+    p {
+        font-weight: 600;
+        margin: 0;
+    }
 }
