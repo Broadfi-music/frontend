@@ -3,8 +3,7 @@ import "../Styles/welcome.css";
 
 function Welcome() {
 	const wallet = useTonWallet();
-	// const wallet = '';
-	const optimizedAddress = wallet
+	const optimizedAddress = wallet?.account?.address
 		? wallet.account.address.slice(0, 20) + "..."
 		: "";
 
@@ -23,10 +22,8 @@ function Welcome() {
 				</h1>
 				<div className="btns">
 					<div className="tonconnect">
-						{wallet == null ? (
-							<>
-								<p>nothing here</p>
-							</>
+						{wallet ? (
+							<p>{optimizedAddress}</p>
 						) : (
 							<TonConnectButton className="btn tonbtn" />
 						)}

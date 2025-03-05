@@ -1,7 +1,6 @@
 {
-	"url": "https://broadfi-frontend.vercel.app/", 
-	"name": "BroadFi", 
-	"iconUrl": "/Images/logo2.png", 
-	"termsOfUseUrl": "/terms",
-	"privacyPolicyUrl": "/privacy-policy"
+	"name": "BroadFi",
+	"description": "A gamified SocialFi platform for audio content",
+	"url": "https://broadfi-frontend.vercel.app/",
+	"iconUrl": "/Images/logo2.png"
 }
