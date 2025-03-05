@@ -32,7 +32,7 @@ function Navbar() {
 					</div>
 				</div>
 			</div>
-			<div className={active ? "nav-menu active" : "nav-menu"}>]
+			<div className={active ? "nav-menu active" : "nav-menu"}>
 				<Link
 					to={"/contest"}
 					className="nav-link"
