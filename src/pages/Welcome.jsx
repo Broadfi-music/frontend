@@ -3,9 +3,12 @@ import "../Styles/welcome.css";
 
 function Welcome() {
 	const wallet = useTonWallet();
+	// const wallet = '';
 	const optimizedAddress = wallet
-		? wallet.account.address.slice(0, 15) + "..."
+		? wallet.account.address.slice(0, 20) + "..."
 		: "";
+
+	wallet ? console.log(wallet) : console.log(wallet);
 
 	return (
 		<div className="welcome">
@@ -20,8 +23,10 @@ function Welcome() {
 				</h1>
 				<div className="btns">
 					<div className="tonconnect">
-						{wallet ? (
-							<p>{optimizedAddress}</p>
+						{wallet == null ? (
+							<>
+								<p>nothing here</p>
+							</>
 						) : (
 							<TonConnectButton className="btn tonbtn" />
 						)}

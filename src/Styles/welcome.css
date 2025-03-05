@@ -41,6 +41,9 @@
 .welcome .hero .btn img {
   width: 22px;
 }
+.welcome .btn-danger {
+  margin-top: 10px !important;
+}
 .welcome .tonconnect {
   display: none;
   justify-content: center;
@@ -58,6 +61,11 @@
 .welcome .tonconnect .tonbtn {
   padding: 10px 25px !important;
   border: 2px solid #E34830;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.welcome .tonconnect .tonbtn* {
+  overflow: hidden;
 }
 .welcome .tonconnect .tonbtn:hover {
   box-shadow: none !important;
@@ -133,6 +141,7 @@
   justify-content: center;
   flex-direction: column;
   transition: 0.3s ease-out;
+  cursor: pointer;
 }
 .welcome .features .feature:hover {
   transform: translateY(-10px);
