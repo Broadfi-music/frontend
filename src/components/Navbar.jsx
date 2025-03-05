@@ -49,7 +49,7 @@ function Navbar() {
 						{wallet ? (
 							<p>Connected: {optimizedAddress}</p>
 						) : (
-							<TonConnectButton className="btn btn-danger tonbtn" />
+							<TonConnectButton className="btn btn-danger" />
 						)}
 					</div>
 					<div
