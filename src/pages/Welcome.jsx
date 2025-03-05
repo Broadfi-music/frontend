@@ -1,14 +1,6 @@
-import { TonConnectButton, useTonWallet } from "@tonconnect/ui-react";
 import "../Styles/welcome.css";
 
 function Welcome() {
-	const wallet = useTonWallet();
-	const optimizedAddress = wallet?.account?.address
-		? wallet.account.address.slice(0, 20) + "..."
-		: "";
-
-	wallet ? console.log(wallet) : console.log(wallet);
-
 	return (
 		<div className="welcome">
 			<div className="hero">
@@ -21,13 +13,6 @@ function Welcome() {
 					<br /> with BroadFi.
 				</h1>
 				<div className="btns">
-					<div className="tonconnect">
-						{wallet ? (
-							<p>{optimizedAddress}</p>
-						) : (
-							<TonConnectButton className="btn tonbtn" />
-						)}
-					</div>
 					<a href="/homepage" className="btn btn-danger">
 						<img
 							src="/Images/Icons/headphones.png"
@@ -70,11 +55,7 @@ function Welcome() {
 					BroadFi bridges the gap by creating a decentralized platform
 					where creators can engage in gamified remix and podcast
 					challenges, while listeners actively participate by voting
-					and staking tokens. The platform ensures fair revenue
-					distribution through blockchain technology, providing
-					transparency and rewards for all participants. This
-					ecosystem fosters creativity, collaboration, and
-					community-driven trends in the audio content space.
+					and staking tokens.
 				</p>
 			</div>
 
@@ -86,11 +67,7 @@ function Welcome() {
 						BroadFi allows creators to participate in remix or
 						podcast challenges by submitting their work. Users stake
 						tokens to vote for their favorite content, determining
-						the winner. Tokens staked are distributed as rewards to
-						content creators and participants. Additionally,
-						listeners can stake tokens to earn a share of the
-						revenue generated from played content, creating a dual
-						benefit for both creators and audiences.
+						the winner.
 					</p>
 				</div>
 				<div className="image">

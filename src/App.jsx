@@ -7,8 +7,8 @@ import Playlists from "./pages/Playlists";
 import Playlist from "./pages/Playlist";
 import Staking from "./pages/Staking";
 import Welcome from "./pages/Welcome";
-import "./Styles/media-queries.css";
 import Footer from "./components/Footer";
+import "./Styles/media-queries.css";
 
 function App() {
 	return (
