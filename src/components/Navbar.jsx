@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/nav.css";
 import { TonConnectButton, useTonWallet } from "@tonconnect/ui-react";
@@ -7,6 +7,8 @@ import { TonConnectButton, useTonWallet } from "@tonconnect/ui-react";
 function Navbar() {
 	const [active, setActive] = useState(false);
     const wallet = useTonWallet();
+
+    const optimizedAddress = wallet ? wallet.account.address.slice(0, 15) + '...' : '';
 
 	return (
 		<>
@@ -31,7 +33,7 @@ function Navbar() {
 							Discover
 						</Link>
 						{wallet ? (
-							<p>Connected: {wallet.account.address}</p>
+							<p>Connected: {optimizedAddress}</p>
 						) : (
 							<TonConnectButton className="btn btn-danger tonbtn" />
 						)}
@@ -59,7 +61,7 @@ function Navbar() {
 					Discover
 				</Link>
 				{wallet ? (
-					<p>Connected: {wallet.account.address}</p>
+					<p>Connected: {optimizedAddress}</p>
 				) : (
 					<TonConnectButton className="btn btn-danger tonbtn" />
 				)}

@@ -17,6 +17,9 @@
   gap: 20px;
   align-items: center;
 }
+.navbar .navbar-nav p {
+  margin: 0;
+}
 .navbar a.nav-link {
   color: white;
 }
