@@ -83,7 +83,6 @@ function Navbar() {
 				>
 					Discover
 				</Link>
-				<p>Connected: {optimizedAddress}</p>
 			</div>
 		</>
 	);

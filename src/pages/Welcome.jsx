@@ -16,7 +16,7 @@ function Welcome() {
 					<br /> with BroadFi.
 				</h1>
 				<div className="btns">
-                    <TonConnectButton className={wallet ? "btn tonbtn" : 'btn btn-danger'}/>
+                    <TonConnectButton className='btn tonbtn' />
 					<a href="/homepage" className="btn btn-danger">
 						<img
 							src="/Images/Icons/headphones.png"
