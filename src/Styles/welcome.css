@@ -41,16 +41,29 @@
 .welcome .hero .btn img {
   width: 22px;
 }
-.welcome .tonbtn {
-  display: none !important;
+.welcome .tonconnect {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.welcome .tonconnect p {
+  text-align: center;
+  border: 2px solid #E34830;
+  margin: 0;
+  padding: 15px 25px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.welcome .tonconnect .tonbtn {
   padding: 10px 25px !important;
   border: 2px solid #E34830;
 }
-.welcome .tonbtn:hover {
+.welcome .tonconnect .tonbtn:hover {
   box-shadow: none !important;
   border: 2px solid #E34830;
 }
-.welcome .tonbtn button {
+.welcome .tonconnect .tonbtn button {
   background-color: transparent !important;
   box-shadow: none !important;
 }
@@ -162,7 +175,8 @@
     top: -18px !important;
   }
   .what-is {
-    padding: 40px !important;
+    padding: 40px 30px !important;
+    text-align: center;
   }
   .solution {
     padding: 30px 20px;

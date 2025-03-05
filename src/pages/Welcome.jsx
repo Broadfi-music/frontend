@@ -1,7 +1,12 @@
-import { TonConnectButton } from "@tonconnect/ui-react";
+import { TonConnectButton, useTonWallet } from "@tonconnect/ui-react";
 import "../Styles/welcome.css";
 
 function Welcome() {
+	const wallet = useTonWallet();
+	const optimizedAddress = wallet
+		? wallet.account.address.slice(0, 15) + "..."
+		: "";
+
 	return (
 		<div className="welcome">
 			<div className="hero">
@@ -15,7 +20,11 @@ function Welcome() {
 				</h1>
 				<div className="btns">
 					<div className="tonconnect">
-						<TonConnectButton className="btn tonbtn" />
+						{wallet ? (
+							<p>{optimizedAddress}</p>
+						) : (
+							<TonConnectButton className="btn tonbtn" />
+						)}
 					</div>
 					<a href="/homepage" className="btn btn-danger">
 						<img
