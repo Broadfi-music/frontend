@@ -75,7 +75,7 @@ function Welcome() {
 				</div>
 				<div className="image">
 					<img
-						src="/public/Images/welcome-illustration.png"
+						src="/Images/welcome-illustration.png"
 						alt="Welcome"
 					/>
 				</div>
