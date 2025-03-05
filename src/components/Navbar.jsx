@@ -30,9 +30,6 @@ function Navbar() {
 						<Link to={"/contest"} className="nav-link">
 							Contest
 						</Link>
-						<Link to={"/how-it-works"} className="nav-link">
-							How it works
-						</Link>
 						<Link to={"/tokenmics"} className="nav-link">
 							Tokenmics
 						</Link>
@@ -61,13 +58,6 @@ function Navbar() {
 					onClick={() => setActive(false)}
 				>
 					Contest
-				</Link>
-				<Link
-					to={"/how-it-works"}
-					className="nav-link"
-					onClick={() => setActive(false)}
-				>
-					How it works
 				</Link>
 				<Link
 					to={"/tokenmics"}
