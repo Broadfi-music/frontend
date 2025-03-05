@@ -6,16 +6,23 @@ import { TonConnectButton, useTonWallet } from "@tonconnect/ui-react";
 
 function Navbar() {
 	const [active, setActive] = useState(false);
-    const wallet = useTonWallet();
+	const wallet = useTonWallet();
 
-    const optimizedAddress = wallet ? wallet.account.address.slice(0, 15) + '...' : '';
+	const optimizedAddress = wallet
+		? wallet.account.address.slice(0, 15) + "..."
+		: "";
 
 	return (
 		<>
+			<img className="blur" src="/Effects/blur.png" alt="" />
 			<div className="navbar navbar-expand-lg">
 				<div className="container">
 					<div className="navbar-brand">
-						<Link to={"/"} className="nav-link">
+						<Link
+							to={"/"}
+							className="nav-link"
+							onClick={() => setActive(false)}
+						>
 							<h1 className="logo">BROADFI</h1>
 						</Link>
 					</div>
@@ -48,16 +55,32 @@ function Navbar() {
 				</div>
 			</div>
 			<div className={active ? "nav-menu active" : "nav-menu"}>
-				<Link to={"/contest"} className="nav-link">
+				<Link
+					to={"/contest"}
+					className="nav-link"
+					onClick={() => setActive(false)}
+				>
 					Contest
 				</Link>
-				<Link to={"/how-it-works"} className="nav-link">
+				<Link
+					to={"/how-it-works"}
+					className="nav-link"
+					onClick={() => setActive(false)}
+				>
 					How it works
 				</Link>
-				<Link to={"/tokenmics"} className="nav-link">
+				<Link
+					to={"/tokenmics"}
+					className="nav-link"
+					onClick={() => setActive(false)}
+				>
 					Tokenmics
 				</Link>
-				<Link to={"/discover"} className="nav-link">
+				<Link
+					to={"/discover"}
+					className="nav-link"
+					onClick={() => setActive(false)}
+				>
 					Discover
 				</Link>
 				{wallet ? (

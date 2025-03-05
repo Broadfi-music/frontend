@@ -1,4 +1,7 @@
 @media (max-width: 800px) {
+  .blur {
+    top: -60px !important;
+  }
   .navbar .navbar-nav {
     flex-direction: row;
   }
@@ -95,6 +98,9 @@
   }
 }
 @media (max-width: 500px) {
+  .blur {
+    top: 0px !important;
+  }
   .navbar .logo {
     font-size: 1.7em;
   }
