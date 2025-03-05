@@ -5,7 +5,7 @@ import "./styles/nav.css";
 
 function Navbar() {
 	const [active, setActive] = useState(false);
-    const wallet = useTonWallet();
+	const wallet = useTonWallet();
 	const optimizedAddress = wallet
 		? wallet.account.address.slice(0, 15) + "..."
 		: "";
