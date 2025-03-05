@@ -1,9 +1,7 @@
-import { TonConnectButton, useTonWallet } from "@tonconnect/ui-react";
+import { TonConnectButton } from "@tonconnect/ui-react";
 import "../Styles/welcome.css";
 
 function Welcome() {
-    const wallet = useTonWallet();
-
 	return (
 		<div className="welcome">
 			<div className="hero">
@@ -16,7 +14,9 @@ function Welcome() {
 					<br /> with BroadFi.
 				</h1>
 				<div className="btns">
-                    <TonConnectButton className='btn tonbtn' />
+					<div className="tonconnect">
+						<TonConnectButton className="btn tonbtn" />
+					</div>
 					<a href="/homepage" className="btn btn-danger">
 						<img
 							src="/Images/Icons/headphones.png"
