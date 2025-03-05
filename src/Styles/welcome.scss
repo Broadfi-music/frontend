@@ -47,6 +47,21 @@
         }
     }
 
+    .tonbtn {
+        display: none !important;
+        padding: 10px 25px !important;
+        border: 2px solid $red;
+
+        &:hover {
+            box-shadow: none !important;
+            border: 2px solid $red;
+        }
+        
+        button {
+            background-color: transparent !important;
+        }
+    }
+
     .what-is {
         background-color: rgba($color: #fff, $alpha: 0.05);
         padding: 50px;

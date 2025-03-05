@@ -4,7 +4,6 @@
 }
 * {
   margin: 0;
-  overflow-x: hidden;
 }
 
 body {
@@ -42,19 +41,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .btn:hover {
   filter: brightness(0.9);
-}
-.btn.tonbtn {
-  background-color: auto;
-  padding: 0;
-}
-.btn.tonbtn button {
-  background-color: #E34830 !important;
-  padding: 15px 25px;
-  height: auto;
-  box-shadow: none;
-}
-.btn.tonbtn button:hover {
-  transform: none;
 }
 
 .btn-danger {

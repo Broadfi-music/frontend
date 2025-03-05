@@ -73,11 +73,7 @@ function Navbar() {
 				>
 					Discover
 				</Link>
-				{wallet ? (
-					<p>Connected: {optimizedAddress}</p>
-				) : (
-					<TonConnectButton className="btn btn-danger tonbtn" />
-				)}
+				<p>Connected: {optimizedAddress}</p>
 			</div>
 		</>
 	);

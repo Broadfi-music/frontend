@@ -101,6 +101,9 @@
   .blur {
     top: 0px !important;
   }
+  .welcome .btn.tonbtn {
+    display: block !important;
+  }
   .navbar .logo {
     font-size: 1.7em;
   }

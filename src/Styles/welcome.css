@@ -41,6 +41,18 @@
 .welcome .hero .btn img {
   width: 22px;
 }
+.welcome .tonbtn {
+  display: none !important;
+  padding: 10px 25px !important;
+  border: 2px solid #E34830;
+}
+.welcome .tonbtn:hover {
+  box-shadow: none !important;
+  border: 2px solid #E34830;
+}
+.welcome .tonbtn button {
+  background-color: transparent !important;
+}
 .welcome .what-is {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 50px;
