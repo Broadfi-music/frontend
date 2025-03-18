@@ -171,6 +171,7 @@
             i {
                 font-size: 1.2em;
                 cursor: pointer;
+                overflow: visible;
             }
         }
     }
@@ -224,6 +225,7 @@
             justify-content: space-between;
             margin-bottom: 40px;
             cursor: pointer;
+            transition: 0.3s ease-in-out;
 
             &>* {
                 width: 100%;

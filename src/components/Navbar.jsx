@@ -5,6 +5,7 @@ import "./styles/nav.css";
 
 function Navbar() {
 	const [active, setActive] = useState(false);
+	const [visible, setVisible] = useState(false);
 	const wallet = useTonWallet();
 	const optimizedAddress = wallet
 		? wallet.account.address.slice(0, 15) + "..."
@@ -58,9 +59,6 @@ function Navbar() {
 						) : (
 							<>
 								<TonConnectButton className="btn btn-danger" />
-								<div>
-									<TonConnectButton className="btn btn-danger" />
-								</div>
 							</>
 						)}
 					</div>
@@ -71,6 +69,27 @@ function Navbar() {
 						<span></span>
 						<span></span>
 					</div>
+				</div>
+				<div className="container others">
+					<a href="/contest">Contest </a>
+					<a href="/livestream">Live </a>
+					<a href="#">Pools </a>
+					<a href="/podcast">Podcast </a>
+					<a href="/stake-to-earn">Stake </a>
+					<a href="/playlists">Playlists </a>
+					<a href="#">Swap </a>
+					<a href="#">Jukebox </a>
+					<a href="#">Nodes </a>
+					<a href="#">Radio stations </a>
+					<a href="#">Launchpad </a>
+					<a href="#">Distribution </a>
+					<a href="#">Ai Curation </a>
+				</div>
+				<div
+					className="toggle_nav"
+					onClick={() => setVisible(!visible)}
+				>
+					All Features <i class="fa-solid fa-chevron-down"></i>
 				</div>
 			</div>
 			<div className={active ? "nav-menu active" : "nav-menu"}>
@@ -107,6 +126,47 @@ function Navbar() {
 				) : (
 					<TonConnectButton className="btn btn-danger" />
 				)}
+			</div>
+			<div className={visible ? "others_nav active" : "others_nav"}>
+				<a href="/contest" onClick={() => setVisible(false)}>
+					Contest{" "}
+				</a>
+				<a href="/livestream" onClick={() => setVisible(false)}>
+					Live{" "}
+				</a>
+				<a href="#" onClick={() => setVisible(false)}>
+					Pools{" "}
+				</a>
+				<a href="/podcast" onClick={() => setVisible(false)}>
+					Podcast{" "}
+				</a>
+				<a href="/stake-to-earn" onClick={() => setVisible(false)}>
+					Stake{" "}
+				</a>
+				<a href="/playlists" onClick={() => setVisible(false)}>
+					Playlists{" "}
+				</a>
+				<a href="#" onClick={() => setVisible(false)}>
+					Swap{" "}
+				</a>
+				<a href="#" onClick={() => setVisible(false)}>
+					Jukebox{" "}
+				</a>
+				<a href="#" onClick={() => setVisible(false)}>
+					Nodes{" "}
+				</a>
+				<a href="#" onClick={() => setVisible(false)}>
+					Radio stations{" "}
+				</a>
+				<a href="#" onClick={() => setVisible(false)}>
+					Launchpad{" "}
+				</a>
+				<a href="#" onClick={() => setVisible(false)}>
+					Distribution{" "}
+				</a>
+				<a href="#" onClick={() => setVisible(false)}>
+					Ai Curation{" "}
+				</a>
 			</div>
 		</>
 	);

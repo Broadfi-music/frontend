@@ -145,6 +145,7 @@
 .playlist_page .part-info > * i {
   font-size: 1.2em;
   cursor: pointer;
+  overflow: visible;
 }
 .playlist_page .btn {
   width: 50%;
@@ -191,6 +192,7 @@
   justify-content: space-between;
   margin-bottom: 40px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 .playlist_page .tracks .track > * {
   width: 100%;
