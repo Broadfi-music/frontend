@@ -33,6 +33,7 @@
   box-shadow: 0px 4px 20px rgba(227, 72, 48, 0.2);
   width: -moz-fit-content;
   width: fit-content;
+  transition: none;
 }
 .welcome .hero .btn:hover {
   filter: brightness(1.2);
@@ -43,37 +44,6 @@
 }
 .welcome .btn-danger {
   margin-top: 10px !important;
-}
-.welcome .tonconnect {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-.welcome .tonconnect p {
-  text-align: center;
-  border: 2px solid #E34830;
-  margin: 0;
-  padding: 15px 25px;
-  font-weight: 600;
-  border-radius: 10px;
-}
-.welcome .tonconnect .tonbtn {
-  padding: 10px 25px !important;
-  border: 2px solid #E34830;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.welcome .tonconnect .tonbtn* {
-  overflow: hidden;
-}
-.welcome .tonconnect .tonbtn:hover {
-  box-shadow: none !important;
-  border: 2px solid #E34830;
-}
-.welcome .tonconnect .tonbtn button {
-  background-color: transparent !important;
-  box-shadow: none !important;
 }
 .welcome .what-is {
   background-color: rgba(255, 255, 255, 0.05);
@@ -124,6 +94,9 @@
 .welcome .container {
   margin: 80px auto;
 }
+.welcome .features {
+  overflow: hidden;
+}
 .welcome .features .row {
   justify-content: space-between;
   align-items: stretch;
@@ -140,7 +113,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transition: 0.3s ease-out;
   cursor: pointer;
 }
 .welcome .features .feature:hover {

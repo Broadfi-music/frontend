@@ -40,6 +40,21 @@
 .navbar .menu-icon.active span:last-child {
   transform: translateY(-10px) rotate(-45deg);
 }
+.navbar .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+.navbar .btn > div {
+  overflow: hidden;
+}
+.navbar .btn button {
+  background-color: inherit;
+  padding: 0;
+  box-shadow: none;
+  font-family: inherit;
+}
 
 .btn {
   overflow: hidden;

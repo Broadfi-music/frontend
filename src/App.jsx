@@ -8,6 +8,7 @@ import Playlist from "./pages/Playlist";
 import Staking from "./pages/Staking";
 import Welcome from "./pages/Welcome";
 import Footer from "./components/Footer";
+import Profile from "./components/Profile";
 import "./Styles/media-queries.css";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 						<Route path="/playlists" Component={Playlists} />
 						<Route path="/playlist" Component={Playlist} />
 						<Route path="/stake-to-earn" Component={Staking} />
+						<Route path="/profile" Component={Profile} />
 					</Routes>
                     <Footer />
 				</Router>

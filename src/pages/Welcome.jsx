@@ -1,28 +1,62 @@
+import { motion } from "motion/react";
 import "../Styles/welcome.css";
 
 function Welcome() {
+	const container = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1, 
+			transition: {
+				staggerChildren: 0.5,
+			},
+		},
+	};
+
+	const item = {
+		hidden: { translateY: 60, opacity: 0 },
+		show: {
+			translateY: 0,
+			opacity: 1,
+			transition: { type: "spring", bounce: 0.5 },
+		},
+	};
+
 	return (
 		<div className="welcome">
-			<div className="hero">
-				<h1 className="text-center header">
+			<div className="hero overflow-hidden">
+				<motion.h1
+					className="text-center header"
+					initial={{ translateY: 100, opacity: 0 }}
+					whileInView={{ translateY: 0, opacity: 1 }}
+					transition={{ type: "spring", bounce: 0.2, duration: 0.7 }}
+					viewport={{ once: true }}
+				>
 					Come join the{" "}
 					<span>
 						movement
 						<img src="/Images/Icons/loader.png" alt="loader" />
 					</span>
 					<br /> with BroadFi.
-				</h1>
-				<div className="btns">
-					<a href="/homepage" className="btn btn-danger">
-						<img
-							src="/Images/Icons/headphones.png"
-							alt="headphones"
-						/>
-						Start Now!
-					</a>
-				</div>
+				</motion.h1>
+				<motion.a
+					href="/homepage"
+					className="btn btn-danger"
+					initial={{ translateY: 30, opacity: 0 }}
+					whileInView={{ translateY: 0, opacity: 1 }}
+					transition={{ type: "spring", bounce: 0.5, delay: 0.3 }}
+					viewport={{ once: true }}
+				>
+					<img src="/Images/Icons/headphones.png" alt="headphones" />
+					Launch App
+				</motion.a>
 			</div>
-			<div className="what-is container">
+			<motion.div
+				className="what-is container"
+				initial={{ translateY: 30, opacity: 0 }}
+				whileInView={{ translateY: 0, opacity: 1 }}
+				transition={{ type: "spring", bounce: 0.3, delay: 0.5 }}
+				viewport={{ once: true }}
+			>
 				<h2>What is BroadFi?</h2>
 				<p>
 					BroadFi is an innovative gamified SocialFi platform that
@@ -34,8 +68,14 @@ function Welcome() {
 					collaborative and rewarding ecosystem for creators,
 					listeners, and investors alike.
 				</p>
-			</div>
-			<div className="problem container">
+			</motion.div>
+			<motion.div
+				className="problem container"
+				initial={{ translateY: 40, opacity: 0 }}
+				whileInView={{ translateY: 0, opacity: 1 }}
+				transition={{ type: "spring", bounce: 0.4, delay: 0.2 }}
+				viewport={{ once: true }}
+			>
 				<h6 className="tagline">The problem</h6>
 				<h2>The issue we're trying to solve.</h2>
 				<p>
@@ -47,8 +87,14 @@ function Welcome() {
 					challenges that incentivize community participation and
 					creativity.
 				</p>
-			</div>
-			<div className="solution container">
+			</motion.div>
+			<motion.div
+				className="solution container"
+				initial={{ translateY: 40, opacity: 0 }}
+				whileInView={{ translateY: 0, opacity: 1 }}
+				transition={{ type: "spring", bounce: 0.6, delay: 0.2 }}
+				viewport={{ once: true }}
+			>
 				<h6 className="tagline">The solution</h6>
 				<h2>How we will solve that</h2>
 				<p>
@@ -57,9 +103,15 @@ function Welcome() {
 					challenges, while listeners actively participate by voting
 					and staking tokens.
 				</p>
-			</div>
+			</motion.div>
 
-			<div className="choice container">
+			<motion.div
+				className="choice container"
+				initial={{ translateY: 50, opacity: 0 }}
+				whileInView={{ translateY: 0, opacity: 1 }}
+				transition={{ type: "spring", bounce: 0.7, delay: 0.3 }}
+				viewport={{ once: true }}
+			>
 				<div className="text">
 					<h6 className="tagline">Why choose us?</h6>
 					<h2>How BroadFi works</h2>
@@ -73,13 +125,23 @@ function Welcome() {
 				<div className="image">
 					<img src="/Images/welcome-illustration.png" alt="Welcome" />
 				</div>
-			</div>
+			</motion.div>
 
 			<div className="features container text-center">
 				<h6 className="tagline">What Broadfi offers</h6>
 				<h2>Why use BroadFi?</h2>
-				<div className="row">
-					<div className="feature col-3">
+				<motion.div
+					className="row"
+					initial="hidden"
+					whileInView="show"
+					variants={container}
+                    viewport={{once: 'true'}}
+				>
+					<motion.div
+						className="feature col-3"
+						
+						variants={item}
+					>
 						<img
 							src="/Images/Icons/cpu.png"
 							alt="Gamified Remix and Podcast Challenges"
@@ -89,8 +151,12 @@ function Welcome() {
 							Encourages creativity and competition among
 							creators.
 						</p>
-					</div>
-					<div className="feature col-3">
+					</motion.div>
+					<motion.div
+						className="feature col-3"
+						
+						variants={item}
+					>
 						<img
 							src="/Images/Icons/archive.png"
 							alt="Decentralized Voting System"
@@ -100,8 +166,12 @@ function Welcome() {
 							Users stake tokens to vote for their favorite
 							content.
 						</p>
-					</div>
-					<div className="feature col-3">
+					</motion.div>
+					<motion.div
+						className="feature col-3"
+						
+						variants={item}
+					>
 						<img
 							src="/Images/Icons/dollar-sign.png"
 							alt="Revenue Sharing"
@@ -111,8 +181,12 @@ function Welcome() {
 							Staked tokens allow listeners to earn a share of
 							revenue generated by played content.
 						</p>
-					</div>
-					<div className="feature col-3">
+					</motion.div>
+					<motion.div
+						className="feature col-3"
+						
+						variants={item}
+					>
 						<img
 							src="/Images/Icons/bar-chart.png"
 							alt="Top Chart Trends"
@@ -122,8 +196,12 @@ function Welcome() {
 							Highlights the most popular remixes and podcasts
 							voted by the community.
 						</p>
-					</div>
-					<div className="feature col-3">
+					</motion.div>
+					<motion.div
+						className="feature col-3"
+						
+						variants={item}
+					>
 						<img
 							src="/Images/Icons/droplet.png"
 							alt="Tokenized Economy"
@@ -133,24 +211,32 @@ function Welcome() {
 							Drives platform engagement and rewards users for
 							participation.
 						</p>
-					</div>
-					<div className="feature col-3">
+					</motion.div>
+					<motion.div
+						className="feature col-3"
+						
+						variants={item}
+					>
 						<img
 							src="/Images/Icons/user.png"
 							alt="Creator Dashboard"
 						/>
 						<h4>Creator Dashboard</h4>
 						<p>Provides analytics and insights for creators.</p>
-					</div>
-					<div className="feature col-3">
+					</motion.div>
+					<motion.div
+						className="feature col-3"
+						
+						variants={item}
+					>
 						<img
 							src="/Images/Icons/link.png"
 							alt="On-Chain Transparency"
 						/>
 						<h4>On-Chain Transparency</h4>
 						<p>Ensures secure and verifiable transactions.</p>
-					</div>
-				</div>
+					</motion.div>
+				</motion.div>
 			</div>
 		</div>
 	);

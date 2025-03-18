@@ -26,6 +26,13 @@ function Navbar() {
 					</div>
 					<div className="navbar-nav">
 						<Link
+							to={"/profile"}
+							className="nav-link"
+							onClick={() => setActive(false)}
+						>
+							Profile
+						</Link>
+						<Link
 							to={"/contest"}
 							className="nav-link"
 							onClick={() => setActive(false)}
@@ -49,7 +56,12 @@ function Navbar() {
 						{wallet ? (
 							<p>Connected: {optimizedAddress}</p>
 						) : (
-							<TonConnectButton />
+							<>
+								<TonConnectButton className="btn btn-danger" />
+								<div>
+									<TonConnectButton className="btn btn-danger" />
+								</div>
+							</>
 						)}
 					</div>
 					<div
@@ -62,6 +74,13 @@ function Navbar() {
 				</div>
 			</div>
 			<div className={active ? "nav-menu active" : "nav-menu"}>
+				<Link
+					to={"/profile"}
+					className="nav-link"
+					onClick={() => setActive(false)}
+				>
+					Profile
+				</Link>
 				<Link
 					to={"/contest"}
 					className="nav-link"
@@ -83,7 +102,11 @@ function Navbar() {
 				>
 					Discover
 				</Link>
-				<TonConnectButton />
+				{wallet ? (
+					<p>Connected: {optimizedAddress}</p>
+				) : (
+					<TonConnectButton className="btn btn-danger" />
+				)}
 			</div>
 		</>
 	);

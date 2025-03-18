@@ -6,6 +6,7 @@ import PartItem from "../components/PartItem";
 
 function Contest() {
 	const [action, setAction] = useState("details");
+	const [active, setActive] = useState(false);
 
 	return (
 		<div className="contest">
@@ -64,7 +65,14 @@ function Contest() {
 				</div>
 				<div className="show-more">Show More</div>
 			</div>
-			<div className="participant-info container">
+			<div
+				className={
+					active
+						? "participant-info container active"
+						: "participant-info container"
+				}
+				id="participant-info"
+			>
 				<div className="image">
 					<img
 						className="img"
@@ -78,7 +86,7 @@ function Contest() {
 						<div className="tag">Rap</div>
 						<div className="tag remix">Remix</div>
 					</div>
-					<h2>The love I have for you </h2>
+					<h2>The love I have for you</h2>
 					<div className="part-info">
 						<div className="listens">
 							<i class="fa-solid fa-play"></i>
@@ -117,6 +125,7 @@ function Contest() {
 						listens={"123"}
 						dislikes={"20"}
 						worth={"0.2040"}
+						setActive={setActive}
 					/>
 					<PartItem
 						image={"/Images/p2.png"}
@@ -125,6 +134,7 @@ function Contest() {
 						listens={"123"}
 						dislikes={"20"}
 						worth={"0.2180"}
+						setActive={setActive}
 					/>
 					<PartItem
 						image={"/Images/p3.png"}
@@ -133,6 +143,7 @@ function Contest() {
 						listens={"123"}
 						dislikes={"20"}
 						worth={"0.1200"}
+						setActive={setActive}
 					/>
 					<PartItem
 						image={"/Images/p4.png"}
@@ -141,6 +152,7 @@ function Contest() {
 						listens={"123"}
 						dislikes={"20"}
 						worth={"0.1740"}
+						setActive={setActive}
 					/>
 					<PartItem
 						image={"/Images/p5.png"}
@@ -149,6 +161,7 @@ function Contest() {
 						listens={"123"}
 						dislikes={"20"}
 						worth={"0.2040"}
+						setActive={setActive}
 					/>
 					<PartItem
 						image={"/Images/p6.png"}
@@ -157,6 +170,7 @@ function Contest() {
 						listens={"123"}
 						dislikes={"20"}
 						worth={"0.2040"}
+						setActive={setActive}
 					/>
 				</div>
 			</div>
