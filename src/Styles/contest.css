@@ -176,11 +176,12 @@
 .contest .participant-info .text .part-info > * {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .contest .participant-info .text .part-info > * i {
   font-size: 1.2em;
   cursor: pointer;
+  overflow: visible;
 }
 .contest .participant-info .text .worth {
   margin-bottom: 20px;
@@ -243,11 +244,12 @@
 .contest .participants .row .participant .part-info > * {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .contest .participants .row .participant .part-info > * i {
   font-size: 1.2em;
   cursor: pointer;
+  overflow: visible;
 }
 .contest .participants .row .participant h5 {
   margin-top: 10px;

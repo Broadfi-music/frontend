@@ -163,6 +163,9 @@
 .playlist_page input.form-control::placeholder {
   color: #535353;
 }
+.playlist_page .tracks {
+  text-align: left;
+}
 .playlist_page .tracks .header {
   display: flex;
   justify-content: space-between;
@@ -172,20 +175,34 @@
   border-bottom: 2px solid #2c2c2c;
   margin-bottom: 30px;
 }
-.playlist_page .tracks .header .track-name {
-  width: 30%;
+.playlist_page .tracks .header > * {
+  width: 100%;
+}
+.playlist_page .tracks .other-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.playlist_page .tracks .listeners {
+  width: 100px;
 }
 .playlist_page .tracks .track {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  cursor: pointer;
+}
+.playlist_page .tracks .track > * {
+  width: 100%;
 }
 .playlist_page .tracks .track .img {
   display: flex;
   align-items: center;
   gap: 40px;
-  width: 27%;
+}
+.playlist_page .tracks .track p {
+  margin: 0;
 }
 .playlist_page .tracks .track img {
-  width: 70px;
+  width: 80px;
 }/*# sourceMappingURL=playlists.css.map */

@@ -188,11 +188,12 @@
                 &>* {
                     display: flex;
                     align-items: center;
-                    gap: 10px;
+                    gap: 20px;
 
                     i {
                         font-size: 1.2em;
                         cursor: pointer;
+                        overflow: visible;
                     }
                 }
             }
@@ -264,11 +265,12 @@
                     &>* {
                         display: flex;
                         align-items: center;
-                        gap: 10px;
+                        gap: 20px;
 
                         i {
                             font-size: 1.2em;
                             cursor: pointer;
+                            overflow: visible;
                         }
                     }
                 }

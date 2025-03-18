@@ -193,6 +193,8 @@
     }
 
     .tracks {
+        text-align: left;
+
         .header {
             display: flex;
             justify-content: space-between;
@@ -202,25 +204,44 @@
             border-bottom: 2px solid #2c2c2c;
             margin-bottom: 30px;
 
-            .track-name {
-                width: 30%;
+            &>* {
+                width: 100%;
             }
+        }
+
+        .other-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .listeners {
+            width: 100px;
         }
 
         .track {
             display: flex;
             justify-content: space-between;
             margin-bottom: 40px;
+            cursor: pointer;
+
+            &>* {
+                width: 100%;
+            }
 
             .img {
                 display: flex;
                 align-items: center;
                 gap: 40px;
-                width: 27%;
+
+            }
+
+            p {
+                margin: 0;
             }
 
             img {
-                width: 70px;
+                width: 80px;
             }
         }
     }

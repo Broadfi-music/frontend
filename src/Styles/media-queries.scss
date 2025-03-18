@@ -94,7 +94,7 @@
 
     .contest {
         .more-info .row {
-            gap: 0;
+            gap: 0 !important;
             padding: 0 15px;
 
             &>* {
@@ -240,18 +240,21 @@
             }
         }
 
+        .col .creator {
+            justify-content: center;
+
+            p {
+                width: fit-content !important;
+            }
+        }
+
         .tracks {
             .track {
                 align-items: center;
             }
 
             .img {
-                width: fit-content !important;
                 gap: 20px !important;
-
-                img {
-                    width: 50px;
-                }
             }
         }
     }

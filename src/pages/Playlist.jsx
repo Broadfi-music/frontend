@@ -1,6 +1,7 @@
 import PlaylistItem from "../components/PlaylistItem";
 import "../Styles/playlists.css";
 import "../components/styles/styles.css";
+import TrackItem from "../components/TrackItem";
 
 function Playlist() {
 	return (
@@ -60,33 +61,29 @@ function Playlist() {
 			<div className="tracks mt-5">
 				<div className="header">
 					<p className="track-name">Name</p>
-					<p className="artist">Artist</p>
-					<p>Listeners</p>
-				</div>
-				<div className="track">
-					<div className="img">
-						<img src="/Images/p6.png" alt="Track Pic" />
-						<p>God's Plan</p>
+					<div className="other-info">
+						<p className="artist">Artist</p>
+						<p className="listeners">Listeners</p>
 					</div>
-					<p>Drake</p>
-					<p>125k</p>
 				</div>
-				<div className="track">
-					<div className="img">
-						<img src="/Images/p3.png" alt="Track Pic" />
-						<p>Money</p>
-					</div>
-					<p>Malone</p>
-					<p>15k</p>
-				</div>
-				<div className="track">
-					<div className="img">
-						<img src="/Images/p5.png" alt="Track Pic" />
-						<p>Demons</p>
-					</div>
-					<p>Lil Durk</p>
-					<p>645k</p>
-				</div>
+				<TrackItem
+					image={"/Images/p6.png"}
+					title={"God's Plan"}
+					artist_name={"Drake"}
+					listeners={"125k"}
+				/>
+				<TrackItem
+					image={"/Images/p3.png"}
+					title={"Money"}
+					artist_name={"Malone"}
+					listeners={"15k"}
+				/>
+				<TrackItem
+					image={"/Images/p5.png"}
+					title={"Demons"}
+					artist_name={"Lil Durk"}
+					listeners={"645k"}
+				/>
 			</div>
 
 			<div className="other-playlists top-playlists  mt-5">
