@@ -158,11 +158,34 @@
     width: -moz-fit-content !important;
     width: fit-content !important;
   }
+  .playlist_page .header {
+    font-size: 0.9em !important;
+  }
+  .playlist_page .header .artist {
+    display: none;
+  }
   .playlist_page .tracks .track {
     align-items: center;
+    font-size: 0.9em;
   }
-  .playlist_page .tracks .img {
+  .playlist_page .tracks .mobile-artist {
+    display: block !important;
+  }
+  .playlist_page .tracks .artist {
+    display: none;
+  }
+  .playlist_page .tracks .info {
     gap: 20px !important;
+    width: -webkit-fill-available;
+  }
+  .playlist_page .tracks .info img {
+    width: 50px !important;
+  }
+  .playlist_page .tracks .info button {
+    font-size: 1.1em !important;
+  }
+  .playlist_page .other-info {
+    text-align: right;
   }
 }
 @media (max-width: 376px) {

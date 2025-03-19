@@ -71,7 +71,7 @@ function Navbar() {
 					</div>
 				</div>
 				<div className="container others">
-					<a href="/contest">Contest </a>
+					<a href="#">Contest </a>
 					<a href="/livestream">Live </a>
 					<a href="#">Pools </a>
 					<a href="/podcast">Podcast </a>
@@ -89,7 +89,7 @@ function Navbar() {
 					className="toggle_nav"
 					onClick={() => setVisible(!visible)}
 				>
-					All Features <i class="fa-solid fa-chevron-down"></i>
+					All Features <i className="fa-solid fa-chevron-down"></i>
 				</div>
 			</div>
 			<div className={active ? "nav-menu active" : "nav-menu"}>
@@ -128,7 +128,7 @@ function Navbar() {
 				)}
 			</div>
 			<div className={visible ? "others_nav active" : "others_nav"}>
-				<a href="/contest" onClick={() => setVisible(false)}>
+				<a href="#" onClick={() => setVisible(false)}>
 					Contest{" "}
 				</a>
 				<a href="/livestream" onClick={() => setVisible(false)}>

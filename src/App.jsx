@@ -14,8 +14,8 @@ import "./Styles/media-queries.css";
 function App() {
 	return (
 		<>
-			<TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
-				<Router>
+			<Router>
+				<TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
 					<Navbar />
 					<Routes>
 						<Route path="/" Component={Welcome} />
@@ -26,9 +26,10 @@ function App() {
 						<Route path="/stake-to-earn" Component={Staking} />
 						<Route path="/profile" Component={Profile} />
 					</Routes>
-                    <Footer />
-				</Router>
-			</TonConnectUIProvider>
+					
+					<Footer />
+				</TonConnectUIProvider>
+			</Router>
 		</>
 	);
 }

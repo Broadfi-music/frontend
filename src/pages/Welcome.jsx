@@ -62,30 +62,7 @@ function Welcome() {
 					BroadFi is an innovative gamified SocialFi platform that
 					revolutionizes audio content engagement. It empowers
 					creators and users through gamified remix challenges,
-					decentralized voting, and revenue-sharing models. By staking
-					tokens, users vote for their favorite remixes and earn
-					rewards from the content they listen to, fostering a
-					collaborative and rewarding ecosystem for creators,
-					listeners, and investors alike.
-				</p>
-			</motion.div>
-			<motion.div
-				className="problem container"
-				initial={{ translateY: 40, opacity: 0 }}
-				whileInView={{ translateY: 0, opacity: 1 }}
-				transition={{ type: "spring", bounce: 0.4, delay: 0.2 }}
-				viewport={{ once: true }}
-			>
-				<h6 className="tagline">The problem</h6>
-				<h2>The issue we're trying to solve.</h2>
-				<p>
-					The traditional music and podcasting industries often lack
-					transparency and equitable revenue-sharing mechanisms.
-					Creators struggle to monetize their content effectively,
-					while listeners rarely benefit from their engagement.
-					Moreover, platforms seldom offer interactive gamified
-					challenges that incentivize community participation and
-					creativity.
+					decentralized voting, and revenue-sharing models. 
 				</p>
 			</motion.div>
 			<motion.div

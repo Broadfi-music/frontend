@@ -59,11 +59,6 @@
 .welcome .what-is p {
   opacity: 0.9;
 }
-.welcome .problem p {
-  opacity: 0.8;
-  width: 90%;
-  margin-top: 10px;
-}
 .welcome .solution {
   text-align: center;
   padding: 40px;

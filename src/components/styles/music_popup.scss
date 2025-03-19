@@ -1,0 +1,238 @@
+@import '../../Styles/vars';
+
+.music_popup {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.4s ease;
+
+    &.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container>* {
+        display: flex;
+        align-items: center;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .img {
+        width: 130px;
+        border-radius: 7px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .text {
+        gap: 30px;
+
+        h4 {
+            font-weight: 600;
+            font-size: 1.4em;
+        }
+
+        p {
+            opacity: 0.7;
+        }
+    }
+
+    .seek {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        width: 40%;
+
+        .seek-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+
+            span {
+                overflow: visible;
+                opacity: 0.8;
+                font-size: 0.9em;
+                width: 40px;
+            }
+
+            input {
+                width: 100%;
+                height: 5px;
+                border-radius: 5px;
+                cursor: pointer;
+                overflow: visible;
+                outline: none;
+                appearance: none;
+
+                &::-webkit-slider-thumb {
+                    appearance: none;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: $red;
+                    cursor: pointer;
+                    transition: 0.3s ease;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+
+                    &:hover {
+                        filter: brightness(0.9);
+                    }
+                }
+
+                &::-moz-range-thumb {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: $red;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .controls {
+        display: flex;
+        gap: 40px;
+        overflow: hidden;
+
+        button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: 0.3s ease;
+            overflow: visible;
+            display: flex;
+
+            &:hover {
+                color: rgb(194, 194, 194);
+            }
+        }
+    }
+}
+
+@media (max-width: 766px) {
+    .music_popup {
+        padding-bottom: 60px;
+
+        .seek {
+            align-items: end;
+            width: fit-content;
+        }
+
+        .seek-bar {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            width: 88% !important;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .music_popup {
+
+        .img {
+            width: 100px;
+        }
+
+        .text {
+            gap: 20px;
+        }
+
+        h4 {
+            font-size: 1.1em !important;
+        }
+
+        p {
+            font-size: 0.8em !important;
+        }
+    }
+}
+
+@media (max-width: 542px) {
+    .music_popup {
+
+        .container {
+            padding: 0;
+            margin: auto;
+        }
+
+        .seek {
+            button {
+                display: none;
+
+                &.playBtn {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .music_popup {
+
+        .track-name-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .track-name {
+            display: inline-block;
+            animation: scrollText 7s linear infinite;
+            padding-left: 100%;
+        }
+
+        .img {
+            width: 90px;
+        }
+
+        h4 {
+            font-size: 0.9em !important;
+            margin-bottom: 5px;
+        }
+
+        .controls {
+            .playBtn {
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

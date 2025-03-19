@@ -248,14 +248,44 @@
             }
         }
 
+        .header {
+            font-size: 0.9em !important;
+
+            .artist {
+                display: none;
+            }
+        }
+
         .tracks {
             .track {
                 align-items: center;
+                font-size: 0.9em;
             }
 
-            .img {
-                gap: 20px !important;
+            .mobile-artist {
+                display: block !important;
             }
+
+            .artist {
+                display: none;
+            }
+
+            .info {
+                gap: 20px !important;
+                width: -webkit-fill-available;
+
+                img {
+                    width: 50px !important;
+                }
+
+                button {
+                    font-size: 1.1em !important;
+                }
+            }
+        }
+
+        .other-info {
+            text-align: right;
         }
     }
 }
