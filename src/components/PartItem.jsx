@@ -1,6 +1,6 @@
 import React from "react";
 
-function PartItem({ name, image, likes, dislikes, listens, worth, setActive }) {
+function PartItem({ name, image, likes, dislikes, listens, worth }) {
 	return (
 		<div className="participant col-3">
 			<img className="image" src={image} alt={name} />
@@ -23,9 +23,17 @@ function PartItem({ name, image, likes, dislikes, listens, worth, setActive }) {
 				<div className="worth">
 					<span>{worth}</span>BRD
 				</div>
-				<a href="#participant-info" className="btn btn-danger" onClick={() => setActive(true)}>
-					Vote
-				</a>
+				<div className="vote">
+					<input
+						className="form-control"
+						type="text"
+						name="amountBRD"
+						placeholder="BRD Amount"
+					/>
+					<button className="btn btn-danger">
+						Vote
+					</button>
+				</div>
 			</div>
 		</div>
 	);

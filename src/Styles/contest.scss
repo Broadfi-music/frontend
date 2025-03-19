@@ -128,29 +128,25 @@
         align-items: center;
         gap: 40px;
         margin-top: 30px;
-        max-height: 0;
-        padding: 0;
-        transform: translateY(-20px);
-        opacity: 0;
-        transition: 0.3s ease;
-
-        &.active {
-            max-height: fit-content;
-            padding: 20px;
-            transform: translateY(0px);
-            opacity: 1;
-        }
 
         .image {
             width: 300px;
             position: relative;
 
-            i {
+            button {
                 position: absolute;
                 font-size: 3em;
                 transform: translate(-50%, -50%);
                 left: 50%;
                 top: 50%;
+                background-color: inherit;
+                border: none;
+                outline: none;
+                display: flex;
+
+                i {
+                    color: white;
+                }
             }
         }
 
@@ -238,6 +234,7 @@
 
         .row {
             gap: 30px;
+            align-items: stretch;
 
             .participant {
                 border: 2px solid #2c2c2c;
@@ -287,8 +284,11 @@
                     }
                 }
 
-                .btn {
+                .vote {
                     margin-top: 20px;
+                }
+
+                .btn {
                     width: 100%;
                 }
             }

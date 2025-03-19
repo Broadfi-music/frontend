@@ -125,29 +125,24 @@
   align-items: center;
   gap: 40px;
   margin-top: 30px;
-  max-height: 0;
-  padding: 0;
-  transform: translateY(-20px);
-  opacity: 0;
-  transition: 0.3s ease;
-}
-.contest .participant-info.active {
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  padding: 20px;
-  transform: translateY(0px);
-  opacity: 1;
 }
 .contest .participant-info .image {
   width: 300px;
   position: relative;
 }
-.contest .participant-info .image i {
+.contest .participant-info .image button {
   position: absolute;
   font-size: 3em;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  display: flex;
+}
+.contest .participant-info .image button i {
+  color: white;
 }
 .contest .participant-info .text h2 {
   font-weight: 700;
@@ -219,6 +214,7 @@
 }
 .contest .participants .row {
   gap: 30px;
+  align-items: stretch;
 }
 .contest .participants .row .participant {
   border: 2px solid #2c2c2c;
@@ -260,8 +256,10 @@
 .contest .participants .row .participant .worth span {
   color: #02FF02;
 }
-.contest .participants .row .participant .btn {
+.contest .participants .row .participant .vote {
   margin-top: 20px;
+}
+.contest .participants .row .participant .btn {
   width: 100%;
 }
 .contest form.contest-upload {

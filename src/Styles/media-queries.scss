@@ -123,9 +123,15 @@
 @media (max-width: 740px) {
     .contest .participant-info {
         flex-direction: column;
+        gap: 20px !important;
 
         &>* {
             width: 100% !important;
+            text-align: center;
+
+            .tags {
+                justify-content: center;
+            }
         }
     }
 

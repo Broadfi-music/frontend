@@ -78,9 +78,14 @@
 @media (max-width: 740px) {
   .contest .participant-info {
     flex-direction: column;
+    gap: 20px !important;
   }
   .contest .participant-info > * {
     width: 100% !important;
+    text-align: center;
+  }
+  .contest .participant-info > * .tags {
+    justify-content: center;
   }
   .playlist_page .col {
     text-align: center;
