@@ -1,13 +1,10 @@
 .hero-section {
-    .row {
-        justify-content: space-between;
-        margin: auto;
-    }
 
     .col {
         padding: 0;
         position: relative;
         border-radius: 5px;
+        height: 430px;
 
         .text {
             position: absolute;

@@ -323,4 +323,8 @@
      object-fit: cover;
   border-radius: 5px;
   position: relative;
+}
+
+.contests .container {
+  padding: 0;
 }/*# sourceMappingURL=contest.css.map */

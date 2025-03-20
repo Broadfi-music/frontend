@@ -30,9 +30,9 @@ function Staking() {
 						<input
 							type="number"
 							className="form-control"
-							placeholder="0"
+							placeholder="0.00"
 						/>
-						.00BRD
+						BRD
 					</h2>
 				</div>
 				<div className="time">
@@ -49,7 +49,7 @@ function Staking() {
 			<div className="positions mt-5">
 				<h2>My Positions</h2>
 				<div className="section"></div>
-				<div className="text">
+				<div className="text mt-3">
 					<p>
 						<span>48.9%</span>APY Reward
 					</p>

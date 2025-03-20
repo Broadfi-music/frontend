@@ -1,6 +1,7 @@
 @import '../../Styles/vars';
 
-.contest {
+.contest,
+.contests {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -15,16 +16,30 @@
 
     .more {
         text-align: center;
-        color: $red;
         font-size: 1.2em;
         font-weight: 600;
         margin-top: 20px;
+
+        a {
+            color: $red;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
     }
 
     .contestItem {
         border: 2px solid #2c2c2c;
         border-radius: 20px;
         padding: 0;
+
+        &>* {
+            text-decoration: none;
+            color: white;
+        }
 
         img {
             width: 100%;
@@ -68,6 +83,13 @@
             }
         }
     }
+
+}
+
+.contests .row {
+    gap: 30px;
+    justify-content: start;
+    align-items: stretch;
 }
 
 .head {
@@ -223,7 +245,8 @@
     }
 }
 
-.top-playlists, .other-playlists {
+.top-playlists,
+.other-playlists {
     margin-bottom: 50px;
 
     h1 {
@@ -235,46 +258,46 @@
         gap: 30px;
         padding: 0 20px;
 
-            .col-3 {
-                border: 2px solid #2c2c2c;
-                padding: 0;
-                border-radius: 20px;
-                color: white;
-                text-decoration: none;
+        .col-3 {
+            border: 2px solid #2c2c2c;
+            padding: 0;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
 
-                img {
-                    width: 100%;
-                    object-fit: cover;
-                }
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
 
-                .text {
-                    padding: 30px;
-                    padding-top: 0;
-                }
+            .text {
+                padding: 30px;
+                padding-top: 0;
+            }
 
-                .tag {
-                    padding: 10px 30px;
-                    font-weight: 600;
-                    border: 2px solid #02FF02;
-                    width: fit-content;
-                    border-radius: 10px;
-                    margin-bottom: 10px;
-                }
+            .tag {
+                padding: 10px 30px;
+                font-weight: 600;
+                border: 2px solid #02FF02;
+                width: fit-content;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
 
-                .name {
-                    font-size: 1.2em;
-                    font-weight: 500;
-                    margin-bottom: 10px;
-                }
+            .name {
+                font-size: 1.2em;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
 
-                .d-flex {
-                    margin-top: 10px;
-                }
+            .d-flex {
+                margin-top: 10px;
+            }
 
-                .col {
-                    flex: none;
-                }
+            .col {
+                flex: none;
             }
         }
-    
+    }
+
 }

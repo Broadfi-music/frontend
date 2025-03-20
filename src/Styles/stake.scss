@@ -1,7 +1,8 @@
 .staking {
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 
     h1 {
+        margin-top: 20px;
         margin-bottom: 10px;
     }
 
@@ -18,6 +19,7 @@
             margin-left: 15px;
             display: flex;
             align-items: center;
+            gap: 10px;
         }
 
         input {
@@ -102,6 +104,51 @@
             span {
                 color: #02FF02;
             }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .staking {
+        .amount {
+            h2 {
+                font-size: 1.2em;
+            }
+
+            input {
+                width: 80%;
+            }
+        }
+
+        .btns {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .staking {
+        .amount {
+            h2 {
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        .time {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 330px) {
+    .staking {
+        .time {
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
         }
     }
 }

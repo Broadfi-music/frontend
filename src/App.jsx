@@ -10,6 +10,7 @@ import Welcome from "./pages/Welcome";
 import Footer from "./components/Footer";
 import Profile from "./components/Profile";
 import "./Styles/media-queries.css";
+import Contests from "./pages/Contests";
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 						<Route path="/" Component={Welcome} />
 						<Route path="/homepage" Component={HomePage} />
 						<Route path="/contest" Component={Contest} />
+						<Route path="/contests" Component={Contests} />
 						<Route path="/playlists" Component={Playlists} />
 						<Route path="/playlist" Component={Playlist} />
 						<Route path="/stake-to-earn" Component={Staking} />

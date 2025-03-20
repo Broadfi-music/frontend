@@ -2,61 +2,94 @@
   font-family: Inter;
   src: url(/Inter/Inter-VariableFont_opsz\,wght.ttf);
 }
-.contest {
+.contest,
+.contests {
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.contest h1 {
+.contest h1,
+.contests h1 {
   margin-bottom: 30px;
 }
-.contest .row {
+.contest .row,
+.contests .row {
   justify-content: space-between;
 }
-.contest .more {
+.contest .more,
+.contests .more {
   text-align: center;
-  color: #E34830;
   font-size: 1.2em;
   font-weight: 600;
   margin-top: 20px;
 }
-.contest .contestItem {
+.contest .more a,
+.contests .more a {
+  color: #E34830;
+  text-decoration: none;
+}
+.contest .more a:hover,
+.contests .more a:hover {
+  text-decoration: underline;
+}
+.contest .contestItem,
+.contests .contestItem {
   border: 2px solid #2c2c2c;
   border-radius: 20px;
   padding: 0;
 }
-.contest .contestItem img {
+.contest .contestItem > *,
+.contests .contestItem > * {
+  text-decoration: none;
+  color: white;
+}
+.contest .contestItem img,
+.contests .contestItem img {
   width: 100%;
 }
-.contest .contestItem .text {
+.contest .contestItem .text,
+.contests .contestItem .text {
   padding: 20px;
 }
-.contest .contestItem .name {
+.contest .contestItem .name,
+.contests .contestItem .name {
   margin-top: 20px;
 }
-.contest .contestItem .col {
+.contest .contestItem .col,
+.contests .contestItem .col {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-.contest .contestItem .tags {
+.contest .contestItem .tags,
+.contests .contestItem .tags {
   display: flex;
   gap: 15px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.contest .contestItem .tags .tag {
+.contest .contestItem .tags .tag,
+.contests .contestItem .tags .tag {
   padding: 10px 30px;
   border-radius: 10px;
 }
-.contest .contestItem .tags .tag-green {
+.contest .contestItem .tags .tag-green,
+.contests .contestItem .tags .tag-green {
   border: 2px solid #02FF02;
 }
-.contest .contestItem .tags .tag-yellow {
+.contest .contestItem .tags .tag-yellow,
+.contests .contestItem .tags .tag-yellow {
   border: 2px solid #959A11;
 }
-.contest .contestItem .tags .tag-red {
+.contest .contestItem .tags .tag-red,
+.contests .contestItem .tags .tag-red {
   border: 2px solid #C20505;
+}
+
+.contests .row {
+  gap: 30px;
+  justify-content: start;
+  align-items: stretch;
 }
 
 .head {
@@ -185,34 +218,41 @@
   margin-top: 50px;
 }
 
-.top-playlists, .other-playlists {
+.top-playlists,
+.other-playlists {
   margin-bottom: 50px;
 }
-.top-playlists h1, .other-playlists h1 {
+.top-playlists h1,
+.other-playlists h1 {
   margin-bottom: 30px;
 }
-.top-playlists .row, .other-playlists .row {
+.top-playlists .row,
+.other-playlists .row {
   justify-content: space-between;
   gap: 30px;
   padding: 0 20px;
 }
-.top-playlists .row .col-3, .other-playlists .row .col-3 {
+.top-playlists .row .col-3,
+.other-playlists .row .col-3 {
   border: 2px solid #2c2c2c;
   padding: 0;
   border-radius: 20px;
   color: white;
   text-decoration: none;
 }
-.top-playlists .row .col-3 img, .other-playlists .row .col-3 img {
+.top-playlists .row .col-3 img,
+.other-playlists .row .col-3 img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.top-playlists .row .col-3 .text, .other-playlists .row .col-3 .text {
+.top-playlists .row .col-3 .text,
+.other-playlists .row .col-3 .text {
   padding: 30px;
   padding-top: 0;
 }
-.top-playlists .row .col-3 .tag, .other-playlists .row .col-3 .tag {
+.top-playlists .row .col-3 .tag,
+.other-playlists .row .col-3 .tag {
   padding: 10px 30px;
   font-weight: 600;
   border: 2px solid #02FF02;
@@ -221,14 +261,17 @@
   border-radius: 10px;
   margin-bottom: 10px;
 }
-.top-playlists .row .col-3 .name, .other-playlists .row .col-3 .name {
+.top-playlists .row .col-3 .name,
+.other-playlists .row .col-3 .name {
   font-size: 1.2em;
   font-weight: 500;
   margin-bottom: 10px;
 }
-.top-playlists .row .col-3 .d-flex, .other-playlists .row .col-3 .d-flex {
+.top-playlists .row .col-3 .d-flex,
+.other-playlists .row .col-3 .d-flex {
   margin-top: 10px;
 }
-.top-playlists .row .col-3 .col, .other-playlists .row .col-3 .col {
+.top-playlists .row .col-3 .col,
+.other-playlists .row .col-3 .col {
   flex: none;
 }/*# sourceMappingURL=styles.css.map */

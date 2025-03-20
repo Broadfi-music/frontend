@@ -5,12 +5,9 @@
   .navbar .navbar-nav {
     flex-direction: row;
   }
-  .hero-section .row {
-    flex-direction: column;
-    gap: 20px;
-  }
   .hero-section .col {
     width: 100%;
+    height: 300px;
   }
   .contest .row,
   .charts .row {
@@ -19,6 +16,9 @@
   .contest .col-3,
   .charts .col-3 {
     width: 48%;
+  }
+  .hero h1 {
+    font-size: 2em !important;
   }
   .contest .info .text {
     flex-direction: column-reverse;

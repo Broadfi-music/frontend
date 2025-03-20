@@ -34,11 +34,11 @@ function Navbar() {
 							Profile
 						</Link>
 						<Link
-							to={"/contest"}
+							to={"/contests"}
 							className="nav-link"
 							onClick={() => setActive(false)}
 						>
-							Contest
+							Contests
 						</Link>
 						<Link
 							to={"/tokenmics"}
@@ -71,7 +71,6 @@ function Navbar() {
 					</div>
 				</div>
 				<div className="container others">
-					<a href="#">Contest </a>
 					<a href="/livestream">Live </a>
 					<a href="#">Pools </a>
 					<a href="/podcast">Podcast </a>
@@ -105,7 +104,7 @@ function Navbar() {
 					className="nav-link"
 					onClick={() => setActive(false)}
 				>
-					Contest
+					Contests
 				</Link>
 				<Link
 					to={"/tokenmics"}
@@ -128,9 +127,6 @@ function Navbar() {
 				)}
 			</div>
 			<div className={visible ? "others_nav active" : "others_nav"}>
-				<a href="#" onClick={() => setVisible(false)}>
-					Contest{" "}
-				</a>
 				<a href="/livestream" onClick={() => setVisible(false)}>
 					Live{" "}
 				</a>

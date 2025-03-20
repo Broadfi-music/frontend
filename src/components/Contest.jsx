@@ -29,7 +29,9 @@ function Contest() {
 					tags={["Remix", "Trap"]}
 				/>
 			</div>
-			<p className="more">View More Contests</p>
+			<p className="more">
+				<a href="/contests">View More Contests</a>
+			</p>
 		</div>
 	);
 }
