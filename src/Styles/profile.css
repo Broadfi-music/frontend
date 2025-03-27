@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Inter;
+  src: url(/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+.profile.container {
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 40px auto;
+  border-radius: 10px;
+  border: 1px solid #424242;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 0;
+}
+.profile.container .menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  border-right: 1px solid #424242;
+  width: 100%;
+}
+.profile.container .menu > * {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  cursor: pointer;
+}
+.profile.container .menu > *:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.profile.container .menu > *.active {
+  background-color: rgba(227, 72, 48, 0.05);
+}
+.profile.container .menu > * img {
+  width: 25px;
+}
+.profile.container .main {
+  padding: 30px;
+}/*# sourceMappingURL=profile.css.map */
