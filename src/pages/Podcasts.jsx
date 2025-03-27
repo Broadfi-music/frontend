@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "../Styles/playlists.css";
-import Playlist_Component from "../components/Playlist_Component";
+import Podcast_Component from "../components/Podcast_Component";
 
-function Playlists() {
+function Podcasts() {
 	const [image, setImage] = useState(null);
 
 	const handleImageChange = (event) => {
@@ -13,9 +13,9 @@ function Playlists() {
 	};
 
 	return (
-		<div className="playlists container mt-4">
-			<h1>Create Playlist</h1>
-			<form action="#" className="create-playlist mb-5">
+		<div className="podcasts container mt-4">
+			<h1>Create Podcast</h1>
+			<form action="#" className="create-podcast mb-5">
 				<div className="image-uploader">
 					{image ? (
 						<>
@@ -50,33 +50,32 @@ function Playlists() {
 					<input
 						type="text"
 						className="form-control upload"
-						placeholder="Playlist Title..."
+						placeholder="Podcast Title..."
 					/>
-					<input
+					<textarea
 						type="text"
 						className="form-control upload"
-						placeholder="Music Link..."
+						placeholder="Description..."
 					/>
 					<div className="file-uploader">
-						<label htmlFor="music-upload">Music File</label>
+						<label htmlFor="podcast-upload">Podcast File</label>
 						<input
 							type="file"
-							id="music-upload"
+							id="podcast-upload"
 							className="form-control file"
 						/>
 					</div>
 
 					<p>
-						Every playlist token price start with 20.0129, Every
-						likes and engagement increase the token price. Every
-						dislike reduces the token price.
+						You can add more audio files, podcast token price start
+						from 1.230BRD
 					</p>
 					<button className="btn btn-danger">Upload</button>
 				</div>
 			</form>
-			<Playlist_Component />
+			<Podcast_Component />
 		</div>
 	);
 }
 
-export default Playlists;
+export default Podcasts;

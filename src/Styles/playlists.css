@@ -2,7 +2,7 @@
   font-family: Inter;
   src: url(/Inter/Inter-VariableFont_opsz\,wght.ttf);
 }
-.playlists input.form-control {
+.playlists input.form-control, .playlists textarea.form-control, .podcasts input.form-control, .podcasts textarea.form-control {
   padding: 0.7em 1.4em;
   background-color: rgba(255, 255, 255, 0.05);
   border: 2px solid #2c2c2c;
@@ -11,13 +11,13 @@
   margin-bottom: 15px;
   transition: 0.3s ease;
 }
-.playlists input.form-control::-moz-placeholder {
+.playlists input.form-control::-moz-placeholder, .playlists textarea.form-control::-moz-placeholder, .podcasts input.form-control::-moz-placeholder, .podcasts textarea.form-control::-moz-placeholder {
   color: #535353;
 }
-.playlists input.form-control::placeholder {
+.playlists input.form-control::placeholder, .playlists textarea.form-control::placeholder, .podcasts input.form-control::placeholder, .podcasts textarea.form-control::placeholder {
   color: #535353;
 }
-.playlists form.create-playlist {
+.playlists form.create-playlist, .playlists form.create-podcast, .podcasts form.create-playlist, .podcasts form.create-podcast {
   padding: 30px;
   display: flex;
   gap: 50px;
@@ -25,30 +25,33 @@
   margin-top: 30px;
   border-radius: 20px;
 }
-.playlists form.create-playlist .btn {
+.playlists form.create-playlist .btn, .playlists form.create-podcast .btn, .podcasts form.create-playlist .btn, .podcasts form.create-podcast .btn {
   padding: 15px 40px;
   margin-left: auto;
   display: block;
 }
-.playlists form.create-playlist p {
+.playlists form.create-playlist p, .playlists form.create-podcast p, .podcasts form.create-playlist p, .podcasts form.create-podcast p {
   margin-bottom: 10px;
   margin-top: 0 !important;
 }
-.playlists form.create-playlist input {
+.playlists form.create-playlist input, .playlists form.create-playlist textarea, .playlists form.create-podcast input, .playlists form.create-podcast textarea, .podcasts form.create-playlist input, .podcasts form.create-playlist textarea, .podcasts form.create-podcast input, .podcasts form.create-podcast textarea {
   background-color: black;
 }
-.playlists form.create-playlist input.file {
+.playlists form.create-playlist input.file, .playlists form.create-playlist textarea.file, .playlists form.create-podcast input.file, .playlists form.create-podcast textarea.file, .podcasts form.create-playlist input.file, .podcasts form.create-playlist textarea.file, .podcasts form.create-podcast input.file, .podcasts form.create-podcast textarea.file {
   padding: 15px;
   padding-left: 30px;
 }
-.playlists form.create-playlist .col {
+.playlists form.create-playlist textarea, .playlists form.create-podcast textarea, .podcasts form.create-playlist textarea, .podcasts form.create-podcast textarea {
+  height: 200px;
+}
+.playlists form.create-playlist .col, .playlists form.create-podcast .col, .podcasts form.create-playlist .col, .podcasts form.create-podcast .col {
   flex: none;
   width: 60%;
 }
-.playlists .uploaded {
+.playlists .uploaded, .podcasts .uploaded {
   position: absolute;
 }
-.playlists .image-uploader {
+.playlists .image-uploader, .podcasts .image-uploader {
   width: 200px;
   height: 200px;
   border: 2px solid #2c2c2c;
@@ -59,7 +62,7 @@
   position: relative;
   border-radius: 10px;
 }
-.playlists .upload-button {
+.playlists .upload-button, .podcasts .upload-button {
   background-color: #E34830;
   color: white;
   padding: 10px 20px;
@@ -67,14 +70,14 @@
   cursor: pointer;
   transition: 0.3s ease;
 }
-.playlists .upload-button:hover {
+.playlists .upload-button:hover, .podcasts .upload-button:hover {
   filter: brightness(0.9);
 }
-.playlists .file-input {
+.playlists .file-input, .podcasts .file-input {
   display: none;
   /* Hide the default file input */
 }
-.playlists .image-preview {
+.playlists .image-preview, .podcasts .image-preview {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;

@@ -22,7 +22,7 @@ function Navbar() {
 							className="nav-link"
 							onClick={() => setActive(false)}
 						>
-							<h1 className="logo">BROADFI</h1>
+							<h1 className="logo overflow-hidden">BROADFI</h1>
 						</Link>
 					</div>
 					<div className="navbar-nav">
@@ -73,7 +73,7 @@ function Navbar() {
 				<div className="container others">
 					<a href="/livestream">Live </a>
 					<a href="#">Pools </a>
-					<a href="/podcast">Podcast </a>
+					<a href="/podcasts">Podcasts </a>
 					<a href="/stake-to-earn">Stake </a>
 					<a href="/playlists">Playlists </a>
 					<a href="#">Swap </a>
@@ -133,8 +133,8 @@ function Navbar() {
 				<a href="#" onClick={() => setVisible(false)}>
 					Pools{" "}
 				</a>
-				<a href="/podcast" onClick={() => setVisible(false)}>
-					Podcast{" "}
+				<a href="/podcasts" onClick={() => setVisible(false)}>
+					Podcasts{" "}
 				</a>
 				<a href="/stake-to-earn" onClick={() => setVisible(false)}>
 					Stake{" "}

@@ -130,7 +130,7 @@
         margin-top: 30px;
 
         .image {
-            width: 300px;
+            width: 350px;
             position: relative;
 
             button {
@@ -170,55 +170,6 @@
                         border-color: #959A11;
                     }
                 }
-            }
-
-            .part-info {
-                display: flex;
-                margin: 20px 0;
-                gap: 30px;
-
-                p {
-                    margin: 0;
-                }
-
-                &>* {
-                    display: flex;
-                    align-items: center;
-                    gap: 20px;
-
-                    i {
-                        font-size: 1.2em;
-                        cursor: pointer;
-                        overflow: visible;
-                    }
-                }
-            }
-
-            .worth {
-                margin-bottom: 20px;
-                margin-left: 30px;
-
-                span {
-                    color: #02FF02;
-                }
-            }
-
-            input.form-control {
-                padding: 0.7em 1.4em;
-                background-color: rgba(255, 255, 255, 0.05);
-                border: 2px solid #2c2c2c;
-                color: white;
-                box-shadow: none;
-                margin-bottom: 15px;
-
-                &::placeholder {
-                    color: #535353;
-                }
-            }
-
-            .btn {
-                width: 100%;
-                font-weight: 600;
             }
         }
 

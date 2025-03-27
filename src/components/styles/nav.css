@@ -66,6 +66,9 @@
   box-shadow: none;
   font-family: inherit;
 }
+.navbar .btn button:hover {
+  transform: none;
+}
 
 .toggle_nav {
   display: none;

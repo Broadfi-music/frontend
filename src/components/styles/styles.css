@@ -219,20 +219,24 @@
 }
 
 .top-playlists,
+.top-podcasts,
 .other-playlists {
   margin-bottom: 50px;
 }
 .top-playlists h1,
+.top-podcasts h1,
 .other-playlists h1 {
   margin-bottom: 30px;
 }
 .top-playlists .row,
+.top-podcasts .row,
 .other-playlists .row {
   justify-content: space-between;
   gap: 30px;
   padding: 0 20px;
 }
 .top-playlists .row .col-3,
+.top-podcasts .row .col-3,
 .other-playlists .row .col-3 {
   border: 2px solid #2c2c2c;
   padding: 0;
@@ -241,17 +245,20 @@
   text-decoration: none;
 }
 .top-playlists .row .col-3 img,
+.top-podcasts .row .col-3 img,
 .other-playlists .row .col-3 img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .top-playlists .row .col-3 .text,
+.top-podcasts .row .col-3 .text,
 .other-playlists .row .col-3 .text {
   padding: 30px;
   padding-top: 0;
 }
 .top-playlists .row .col-3 .tag,
+.top-podcasts .row .col-3 .tag,
 .other-playlists .row .col-3 .tag {
   padding: 10px 30px;
   font-weight: 600;
@@ -262,16 +269,43 @@
   margin-bottom: 10px;
 }
 .top-playlists .row .col-3 .name,
+.top-podcasts .row .col-3 .name,
 .other-playlists .row .col-3 .name {
   font-size: 1.2em;
   font-weight: 500;
   margin-bottom: 10px;
 }
 .top-playlists .row .col-3 .d-flex,
+.top-podcasts .row .col-3 .d-flex,
 .other-playlists .row .col-3 .d-flex {
   margin-top: 10px;
 }
 .top-playlists .row .col-3 .col,
+.top-podcasts .row .col-3 .col,
 .other-playlists .row .col-3 .col {
   flex: none;
+}
+.top-playlists .row .col-3.podcast .creator img,
+.top-podcasts .row .col-3.podcast .creator img,
+.other-playlists .row .col-3.podcast .creator img {
+  width: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.top-playlists .row .col-3.podcast .prize,
+.top-podcasts .row .col-3.podcast .prize,
+.other-playlists .row .col-3.podcast .prize {
+  color: #02FF02;
+}
+.top-playlists .row .col-3.podcast .name,
+.top-podcasts .row .col-3.podcast .name,
+.other-playlists .row .col-3.podcast .name {
+  margin: 0;
+}
+.top-playlists .row .col-3.podcast .creator,
+.top-podcasts .row .col-3.podcast .creator,
+.other-playlists .row .col-3.podcast .creator {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }/*# sourceMappingURL=styles.css.map */

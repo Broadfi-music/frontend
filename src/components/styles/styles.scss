@@ -246,6 +246,7 @@
 }
 
 .top-playlists,
+.top-podcasts,
 .other-playlists {
     margin-bottom: 50px;
 
@@ -296,6 +297,27 @@
 
             .col {
                 flex: none;
+            }
+
+            &.podcast {
+                .creator img {
+                    width: 30px;
+                    object-fit: cover;
+                }
+
+                .prize {
+                    color: #02FF02;
+                }
+
+                .name {
+                    margin: 0;
+                }
+
+                .creator {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
             }
         }
     }
