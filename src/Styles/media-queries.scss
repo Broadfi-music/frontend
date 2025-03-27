@@ -73,7 +73,8 @@
         }
     }
 
-    .top-playlists {
+    .top-playlists,
+    .other-playlists {
 
         .row {
             gap: 20px;
@@ -81,6 +82,26 @@
 
         .col-3 {
             width: 48%;
+        }
+    }
+
+    .top-podcasts {
+        .row {
+            padding: 0;
+            gap: 40px;
+        }
+    }
+
+    .create-podcast {
+        flex-direction: column;
+        gap: 20px !important;
+
+        .image-uploader {
+            height: 270px !important;
+        }
+
+        &>* {
+            width: 100% !important;
         }
     }
 

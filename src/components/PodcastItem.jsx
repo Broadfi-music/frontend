@@ -4,7 +4,7 @@ import "./styles/styles.css";
 function PodcastItem({ name, price, listeners, image, creator_img }) {
 	return (
 		<Link className="col-3 podcast" to="/podcast">
-			<div className="playlist">
+			<div className="podcast">
 				<img className="mb-4" src={image} alt={name} />
 				<div className="text">
 					<div className="creator">
