@@ -1,8 +1,8 @@
 @import './vars';
 
-.playlists {
+.playlists, .podcasts {
 
-    input.form-control {
+    input.form-control, textarea.form-control {
         padding: 0.7em 1.4em;
         background-color: rgba(255, 255, 255, 0.05);
         border: 2px solid #2c2c2c;
@@ -16,7 +16,7 @@
         }
     }
 
-    form.create-playlist {
+    form.create-playlist, form.create-podcast {
         padding: 30px;
         display: flex;
         gap: 50px;
@@ -35,13 +35,17 @@
             margin-top: 0 !important;
         }
 
-        input {
+        input, textarea {
             background-color: black;
 
             &.file {
                 padding: 15px;
                 padding-left: 30px;
             }
+        }
+
+        textarea {
+            height: 200px;
         }
 
         .col {

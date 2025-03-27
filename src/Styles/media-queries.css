@@ -43,11 +43,27 @@
   .creators .col-md-3 {
     width: 100%;
   }
-  .top-playlists .row {
+  .top-playlists .row,
+  .other-playlists .row {
     gap: 20px;
   }
-  .top-playlists .col-3 {
+  .top-playlists .col-3,
+  .other-playlists .col-3 {
     width: 48%;
+  }
+  .top-podcasts .row {
+    padding: 0;
+    gap: 40px;
+  }
+  .create-podcast {
+    flex-direction: column;
+    gap: 20px !important;
+  }
+  .create-podcast .image-uploader {
+    height: 270px !important;
+  }
+  .create-podcast > * {
+    width: 100% !important;
   }
 }
 @media (max-width: 766px) {

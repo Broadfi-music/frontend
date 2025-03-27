@@ -127,7 +127,7 @@
   margin-top: 30px;
 }
 .contest .participant-info .image {
-  width: 300px;
+  width: 350px;
   position: relative;
 }
 .contest .participant-info .image button {
@@ -159,49 +159,6 @@
 }
 .contest .participant-info .text .tags .tag.remix {
   border-color: #959A11;
-}
-.contest .participant-info .text .part-info {
-  display: flex;
-  margin: 20px 0;
-  gap: 30px;
-}
-.contest .participant-info .text .part-info p {
-  margin: 0;
-}
-.contest .participant-info .text .part-info > * {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.contest .participant-info .text .part-info > * i {
-  font-size: 1.2em;
-  cursor: pointer;
-  overflow: visible;
-}
-.contest .participant-info .text .worth {
-  margin-bottom: 20px;
-  margin-left: 30px;
-}
-.contest .participant-info .text .worth span {
-  color: #02FF02;
-}
-.contest .participant-info .text input.form-control {
-  padding: 0.7em 1.4em;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 2px solid #2c2c2c;
-  color: white;
-  box-shadow: none;
-  margin-bottom: 15px;
-}
-.contest .participant-info .text input.form-control::-moz-placeholder {
-  color: #535353;
-}
-.contest .participant-info .text input.form-control::placeholder {
-  color: #535353;
-}
-.contest .participant-info .text .btn {
-  width: 100%;
-  font-weight: 600;
 }
 .contest .participant-info img.img {
   width: 100%;

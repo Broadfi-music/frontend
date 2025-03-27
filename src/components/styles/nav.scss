@@ -74,6 +74,10 @@
             padding: 0;
             box-shadow: none;
             font-family: inherit;
+
+            &:hover {
+                transform: none;
+            }
         }
     }
 

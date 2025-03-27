@@ -1,6 +1,9 @@
 import React from "react";
+import { useState } from "react";
 
 function PartItem({ name, image, likes, dislikes, listens, worth }) {
+	const [isActive, setIsActive] = useState(false);
+
 	return (
 		<div className="participant col-3">
 			<img className="image" src={image} alt={name} />
@@ -25,14 +28,18 @@ function PartItem({ name, image, likes, dislikes, listens, worth }) {
 				</div>
 				<div className="vote">
 					<input
-						className="form-control"
+						className={
+							isActive ? "form-control" : "form-control d-none"
+						}
 						type="text"
 						name="amountBRD"
 						placeholder="BRD Amount"
 					/>
-					<button className="btn btn-danger">
-						Vote
-					</button>
+					{isActive ? (
+						<button className="btn btn-danger">Vote</button>
+					) : (
+						<button className="btn btn-danger" onClick={() => setIsActive(true)}>Enter Amount</button>
+					)}
 				</div>
 			</div>
 		</div>

@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Profile from "./components/Profile";
 import "./Styles/media-queries.css";
 import Contests from "./pages/Contests";
+import Podcasts from "./pages/Podcasts";
 
 function App() {
 	return (
@@ -27,6 +28,7 @@ function App() {
 						<Route path="/playlist" Component={Playlist} />
 						<Route path="/stake-to-earn" Component={Staking} />
 						<Route path="/profile" Component={Profile} />
+						<Route path="/podcasts" Component={Podcasts} />
 					</Routes>
 					
 					<Footer />
