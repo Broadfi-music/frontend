@@ -8,10 +8,11 @@ import Playlist from "./pages/Playlist";
 import Staking from "./pages/Staking";
 import Welcome from "./pages/Welcome";
 import Footer from "./components/Footer";
-import Profile from "./components/Profile";
-import "./Styles/media-queries.css";
+import Profile from "./pages/Profile";
 import Contests from "./pages/Contests";
 import Podcasts from "./pages/Podcasts";
+import Podcast from "./pages/Podcast";
+import "./Styles/media-queries.css";
 
 function App() {
 	return (
@@ -29,6 +30,8 @@ function App() {
 						<Route path="/stake-to-earn" Component={Staking} />
 						<Route path="/profile" Component={Profile} />
 						<Route path="/podcasts" Component={Podcasts} />
+						<Route path="/podcast" Component={Podcast} />
+						<Route path="/profile" Component={Profile} />
 					</Routes>
 					
 					<Footer />
