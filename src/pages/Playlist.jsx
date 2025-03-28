@@ -12,7 +12,7 @@ function Playlist() {
 		<>
 			<div className="container playlist_page">
 				<div className="hero">
-					<img src="/Images/pl2.png" alt="Playlist Pic" />
+					<img src="/Images/placeholder image.jpg" alt="Playlist Pic" />
 				</div>
 				<div className="title d-flex justify-content-between">
 					<h1 className="name">Grandma Dune story</h1>
