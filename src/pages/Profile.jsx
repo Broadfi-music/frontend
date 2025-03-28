@@ -1,14 +1,18 @@
+import { useState } from "react";
 import "../Styles/profile.css";
+import Stats from "./profile/Stats";
+import Tracks from "./profile/Tracks";
+import Wallet from "./profile/Wallet";
+import ProfileContent from "./profile/ProfileContent";
 
 function Profile() {
-	const [page, setPage] = "profile";
+	const [page, setPage] = useState("profile");
 	const menuItems = [
 		{ name: "Profile", title: "profile" },
 		{ name: "Stats", title: "stats" },
 		{ name: "Tracks", title: "tracks" },
 		{ name: "Wallet", title: "wallet" },
 	];
-	console.log(page);
 
 	return (
 		<div className="container profile">
@@ -38,10 +42,15 @@ function Profile() {
 				})}
 			</div>
 			<div className="main">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-				Ducimus odio corrupti harum tenetur in aperiam beatae
-				voluptatibus architecto laudantium blanditiis deserunt amet sint
-				natus dolorum, quasi nulla, consequuntur, voluptatum ab?
+				{page === "stats" ? (
+					<Stats />
+				) : page === "tracks" ? (
+					<Tracks />
+				) : page === "wallet" ? (
+					<Wallet />
+				) : (
+					<ProfileContent />
+				)}
 			</div>
 		</div>
 	);

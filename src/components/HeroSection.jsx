@@ -12,7 +12,7 @@ function HeroSection() {
 					<div className="text">
 						<h2>GANG IN THE HOOD</h2>
 					</div>
-					<img src="/Images/hero2.png" alt="GANG IN THE HOOD" />
+					<img src="/Images/placeholder image.jpg" alt="GANG IN THE HOOD" />
 				</div>
 				<div class="carousel-item col">
 					<div className="text">

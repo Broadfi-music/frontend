@@ -18,7 +18,7 @@ function App() {
 	return (
 		<>
 			<Router>
-				<TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
+				<TonConnectUIProvider manifestUrl="/manifest.json">
 					<Navbar />
 					<Routes>
 						<Route path="/" Component={Welcome} />
