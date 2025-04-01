@@ -2,8 +2,10 @@ import { useState } from "react";
 import "../Styles/profile.css";
 import Stats from "./profile/Stats";
 import Tracks from "./profile/Tracks";
-import Wallet from "./profile/Wallet";
+// import Wallet from "./profile/Wallet";
 import ProfileContent from "./profile/ProfileContent";
+import { TonConnectButton } from '@tonconnect/ui-react';
+
 
 function Profile() {
 	const [page, setPage] = useState("profile");
@@ -47,7 +49,7 @@ function Profile() {
 				) : page === "tracks" ? (
 					<Tracks />
 				) : page === "wallet" ? (
-					<Wallet />
+					<TonConnectButton />
 				) : (
 					<ProfileContent />
 				)}

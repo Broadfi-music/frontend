@@ -2,6 +2,12 @@
   font-family: Inter;
   src: url(/Inter/Inter-VariableFont_opsz\,wght.ttf);
 }
+.welcome {
+  background-image: url(/Images/music.jpg);
+  background-position: center;
+  background-size: contain;
+  background-blend-mode:color-dodge;
+}
 .welcome .hero {
   padding-bottom: 10px;
   margin-top: 20px;

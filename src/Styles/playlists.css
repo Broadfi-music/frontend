@@ -25,6 +25,18 @@
   margin-top: 30px;
   border-radius: 20px;
 }
+.btd {
+  padding: 7px 40px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: white;
+}
+.music {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
 .playlists form.create-playlist .btn, .playlists form.create-podcast .btn, .podcasts form.create-playlist .btn, .podcasts form.create-podcast .btn {
   padding: 15px 40px;
   margin-left: auto;

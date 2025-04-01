@@ -18,7 +18,7 @@ function HeroSection() {
 					<div className="text">
 						<h2>TRENCHES AMONG ALL</h2>
 					</div>
-					<img src="/Images/hero3.png" alt="TRENCHES AMONG ALL" />
+					<img src="/Images/hero3.jpg" alt="TRENCHES AMONG ALL" />
 				</div>
 				<div class="carousel-item col">
 					<div className="text">

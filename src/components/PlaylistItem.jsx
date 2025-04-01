@@ -10,7 +10,7 @@ function PlaylistItem({ name, price, mcap, listeners, tag, image }) {
 					<div className="tag">{tag}</div>
 					<div className="name">{name}</div>
 					<div className="prize text-center">{price}</div>
-					<div className="d-flex justify-content-between">
+					<div className="d-flex justify-content-start gap-2">
 						<div className="col">
 							<div>Mcap</div>
 							<div>{mcap}</div>

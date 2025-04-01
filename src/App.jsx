@@ -12,6 +12,7 @@ import Profile from "./pages/Profile";
 import Contests from "./pages/Contests";
 import Podcasts from "./pages/Podcasts";
 import Podcast from "./pages/Podcast";
+import Livestream from "./pages/Livestream";
 import "./Styles/media-queries.css";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
 						<Route path="/podcasts" Component={Podcasts} />
 						<Route path="/podcast" Component={Podcast} />
 						<Route path="/profile" Component={Profile} />
+						<Route path="/livestream" Component={Livestream} />
 					</Routes>
 					
 					<Footer />

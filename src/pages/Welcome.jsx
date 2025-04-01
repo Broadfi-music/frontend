@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import "../Styles/welcome.css";
-
+// import { TonConnectButton } from '@tonconnect/ui-react';
 function Welcome() {
 	const container = {
 		hidden: { opacity: 0 },
@@ -38,17 +38,7 @@ function Welcome() {
 					</span>
 					<br /> with BroadFi.
 				</motion.h1>
-				<motion.a
-					href="/homepage"
-					className="btn btn-danger"
-					initial={{ translateY: 30, opacity: 0 }}
-					whileInView={{ translateY: 0, opacity: 1 }}
-					transition={{ type: "spring", bounce: 0.5, delay: 0.3 }}
-					viewport={{ once: true }}
-				>
-					<img src="/Images/Icons/headphones.png" alt="headphones" />
-					Launch App
-				</motion.a>
+				{/* <TonConnectButton /> */}
 			</div>
 			<motion.div
 				className="what-is container"

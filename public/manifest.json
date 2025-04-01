@@ -1,5 +1,6 @@
 {
-    "url": "https://broadfi-frontend.vercel.app",
+    "url": "https://broadfi-frontend.vercel.app/manifest.json",
     "name": "BroadFi",
-    "iconUrl": "/Images/logo.png"
+    "iconUrl": "/Images/logo.png",
+    "bridge_url": "https://bridge.tonapi.io/bridge"
 }

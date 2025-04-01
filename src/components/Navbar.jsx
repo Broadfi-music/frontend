@@ -1,16 +1,10 @@
-import { TonConnectButton, useTonWallet } from "@tonconnect/ui-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/nav.css";
-
+import { TonConnectButton } from '@tonconnect/ui-react';
 function Navbar() {
 	const [active, setActive] = useState(false);
 	const [visible, setVisible] = useState(false);
-	const wallet = useTonWallet();
-	const optimizedAddress = wallet
-		? wallet.account.address.slice(0, 15) + "..."
-		: "";
-
 	return (
 		<>
 			<img className="blur" src="/Effects/blur.png" alt="" />
@@ -54,13 +48,7 @@ function Navbar() {
 						>
 							Discover
 						</Link>
-						{wallet ? (
-							<p>Connected: {optimizedAddress}</p>
-						) : (
-							<>
-								<TonConnectButton className="btn btn-danger" />
-							</>
-						)}
+						<TonConnectButton />
 					</div>
 					<div
 						className={active ? "menu-icon active" : "menu-icon"}
@@ -72,7 +60,7 @@ function Navbar() {
 				</div>
 				<div className="container others">
 					<a href="/livestream">Live </a>
-					<a href="#">Pools </a>
+					<a href="/">Pools </a>
 					<a href="/podcasts">Podcasts </a>
 					<a href="/stake-to-earn">Stake </a>
 					<a href="/playlists">Playlists </a>
@@ -120,11 +108,7 @@ function Navbar() {
 				>
 					Discover
 				</Link>
-				{wallet ? (
-					<p>Connected: {optimizedAddress}</p>
-				) : (
-					<TonConnectButton className="btn btn-danger" />
-				)}
+				<TonConnectButton />
 			</div>
 			<div className={visible ? "others_nav active" : "others_nav"}>
 				<a href="/livestream" onClick={() => setVisible(false)}>

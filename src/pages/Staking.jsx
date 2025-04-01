@@ -32,7 +32,6 @@ function Staking() {
 							className="form-control"
 							placeholder="0.00"
 						/>
-						BRD
 					</h2>
 				</div>
 				<div className="time">

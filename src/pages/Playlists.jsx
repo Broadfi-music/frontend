@@ -52,11 +52,6 @@ function Playlists() {
 						className="form-control upload"
 						placeholder="Playlist Title..."
 					/>
-					<input
-						type="text"
-						className="form-control upload"
-						placeholder="Music Link..."
-					/>
 					<div className="file-uploader">
 						<label htmlFor="music-upload">Music File</label>
 						<input
@@ -65,7 +60,14 @@ function Playlists() {
 							className="form-control file"
 						/>
 					</div>
-
+					<div className="music">
+						<input
+							type="text"
+							className="form-control upload"
+							placeholder="Music Link..."
+						/>
+						<button className="btd btn-danger">Add</button>
+					</div>
 					<p>
 						Every playlist token price start with 20.0129, Every
 						likes and engagement increase the token price. Every

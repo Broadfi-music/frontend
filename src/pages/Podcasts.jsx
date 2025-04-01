@@ -68,7 +68,14 @@ function Podcasts() {
 								className="form-control file"
 							/>
 						</div>
-
+						<div className="music">
+							<input
+								type="text"
+								className="form-control upload"
+								placeholder="Music Link..."
+							/>
+							<button className="btd btn-danger">Add</button>
+						</div>
 						<p>
 							You can add more audio files, podcast token price
 							start from 1.230BRD
