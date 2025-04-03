@@ -66,11 +66,11 @@ function Navbar() {
 					<a href="/playlists">Playlists </a>
 					<a href="#">Swap </a>
 					<a href="#">Jukebox </a>
-					<a href="#">Nodes </a>
 					<a href="#">Radio stations </a>
-					<a href="#">Launchpad </a>
-					<a href="#">Distribution </a>
-					<a href="#">Ai Curation </a>
+					<a href="#">Memecoin </a>
+					<a href="#">AMm pools</a>
+					<a href="#">Audio yield farming </a>
+					<a href="#">Audiofi cross chain</a>
 				</div>
 				<div
 					className="toggle_nav"

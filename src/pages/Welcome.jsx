@@ -23,38 +23,40 @@ function Welcome() {
 
 	return (
 		<div className="welcome">
-			<div className="hero overflow-hidden">
-				<motion.h1
-					className="text-center header"
-					initial={{ translateY: 100, opacity: 0 }}
+			<div className="bg">
+				<div className="hero overflow-hidden">
+					<motion.h1
+						className="text-center header"
+						initial={{ translateY: 100, opacity: 0 }}
+						whileInView={{ translateY: 0, opacity: 1 }}
+						transition={{ type: "spring", bounce: 0.2, duration: 0.7 }}
+						viewport={{ once: true }}
+					>
+						Come join the{" "}
+						<span>
+							movement
+							<img src="/Images/Icons/loader.png" alt="loader" />
+						</span>
+						<br /> with BroadFi.
+					</motion.h1>
+					{/* <TonConnectButton /> */}
+				</div>
+				<motion.div
+					className="what-is container"
+					initial={{ translateY: 30, opacity: 0 }}
 					whileInView={{ translateY: 0, opacity: 1 }}
-					transition={{ type: "spring", bounce: 0.2, duration: 0.7 }}
+					transition={{ type: "spring", bounce: 0.3, delay: 0.5 }}
 					viewport={{ once: true }}
 				>
-					Come join the{" "}
-					<span>
-						movement
-						<img src="/Images/Icons/loader.png" alt="loader" />
-					</span>
-					<br /> with BroadFi.
-				</motion.h1>
-				{/* <TonConnectButton /> */}
+					<h2>What is BroadFi?</h2>
+					<p>
+						BroadFi is an innovative gamified SocialFi platform that
+						revolutionizes audio content engagement. It empowers
+						creators and users through gamified remix challenges,
+						decentralized voting, and revenue-sharing models. 
+					</p>
+				</motion.div>
 			</div>
-			<motion.div
-				className="what-is container"
-				initial={{ translateY: 30, opacity: 0 }}
-				whileInView={{ translateY: 0, opacity: 1 }}
-				transition={{ type: "spring", bounce: 0.3, delay: 0.5 }}
-				viewport={{ once: true }}
-			>
-				<h2>What is BroadFi?</h2>
-				<p>
-					BroadFi is an innovative gamified SocialFi platform that
-					revolutionizes audio content engagement. It empowers
-					creators and users through gamified remix challenges,
-					decentralized voting, and revenue-sharing models. 
-				</p>
-			</motion.div>
 			<motion.div
 				className="solution container"
 				initial={{ translateY: 40, opacity: 0 }}
