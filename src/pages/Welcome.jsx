@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import "../Styles/welcome.css";
-// import { TonConnectButton } from '@tonconnect/ui-react';
+import { TonConnectButton } from '@tonconnect/ui-react';
 function Welcome() {
 	const container = {
 		hidden: { opacity: 0 },
@@ -39,7 +39,9 @@ function Welcome() {
 						</span>
 						<br /> with BroadFi.
 					</motion.h1>
-					{/* <TonConnectButton /> */}
+					<div className="wallet">
+						<TonConnectButton/>
+					</div>
 				</div>
 				<motion.div
 					className="what-is container"

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/nav.css";
-import { TonConnectButton } from '@tonconnect/ui-react';
+// import { TonConnectButton } from '@tonconnect/ui-react';
 function Navbar() {
 	const [active, setActive] = useState(false);
 	const [visible, setVisible] = useState(false);
@@ -48,7 +48,6 @@ function Navbar() {
 						>
 							Discover
 						</Link>
-						<TonConnectButton />
 					</div>
 					<div
 						className={active ? "menu-icon active" : "menu-icon"}
@@ -108,7 +107,6 @@ function Navbar() {
 				>
 					Discover
 				</Link>
-				<TonConnectButton />
 			</div>
 			<div className={visible ? "others_nav active" : "others_nav"}>
 				<a href="/livestream" onClick={() => setVisible(false)}>
